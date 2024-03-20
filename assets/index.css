@@ -20,43 +20,62 @@
     position: relative;
   }
   
-  header {
-    width: 100%;
-    padding: 20px 50px;
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
+    width: 100%;
+  }
+  
+  .nav-brand, .navbar, .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-brand img {
+    height: auto; /* Maintient le ratio de l'image */
+    width: 100px; /* Ajustez la largeur de votre logo */
   }
   
   .nav-brand {
-    font-size: 1.5em;
-    font-weight: bold;
+    margin-right: 200px; /* Ajoutez une marge à droite du logo pour le pousser plus loin des liens de navigation */
   }
-  
   .nav-links {
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0 20px; /* Ajustez l'espacement selon vos besoins */
   }
   
   .nav-links li {
-    padding: 0 15px;
+    padding: 0 10px; /* Ajustez l'espacement autour de chaque lien */
   }
   
   .nav-links a {
     text-decoration: none;
     color: #000;
+    font-size: 16px; /* Ajustez selon vos besoins */
   }
   
   .nav-icons span {
-    padding: 0 10px;
-    cursor: pointer;
+    margin: 0 10px; /* Espace entre les icônes */
   }
   
-  .sneaker-collection {
-    padding: 20px;
+  .nav-icons span img {
+    height: 24px; /* Ajustez la hauteur des icônes */
+    width: auto; /* Cela permet de maintenir le ratio de l'image */
   }
+  
+  
+  /* Ajoutez cette règle pour s'assurer que la partie texte de la section 'sneaker-collection' est également centrée */
+  .sneaker-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Cela prend la hauteur restante de l'écran après l'en-tête */
+  }
+  
   
   .sneaker-collection h1 {
     font-size: 2.5em;
@@ -97,4 +116,3 @@
       font-size: 2em;
     }
   }
-  

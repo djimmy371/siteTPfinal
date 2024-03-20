@@ -9,27 +9,46 @@
 <body>
   <div class="hero-section">
     <header>
-      <nav>
-        <div class="nav-brand">
-    <img src="siteTPfinal/assets/image/daddy.png" alt="">
+        <div class="header-container">
+          <div class="nav-brand"> 
+            <img src="assets/image/logo.jpg" alt="logo">
+          </div>
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Products</a></li>
+            </ul>
+          </nav>
+          <div class="nav-icons">
+            <span><img src="assets/image/search.png" alt="search"></span>
+            <span><img src="assets/image/login.png" alt="user"></span>
+            <span><img src="assets/image/coeur.png" alt="coeur"></span>
+            <span><img src="assets/image/bag.png" alt="cart"></span>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Products</a></li>
-        </ul>
-        <div class="nav-icons">
-          <span>🔍</span>
-          <span>👤</span>
-          <span>❤️</span>
-          <span>🛒</span>
+      </header>
+      <div class="carousel">
+        <div class="carousel-item active">
+            <H1 class="texte-bulle7">BTS SIO ALTERNANCE</H1>
+            <img src="assets/image/logo.jpg" class="line6">
+           <p><strong> Lycée Notre Dame La Riche, Tours</strong></p>
+            <p>Apprentissage BlueJ, Java, <br>algorithmie </p>
+
         </div>
-      </nav>
-    </header>
-    <div class="sneaker-collection">
-      <h1>GOOD SHOES TAKE YOU GOOD PLACES</h1>
-      <button class="shop-now">Shop Now</button>
-    </div>
+        <!-- Répétez ceci pour chaque élément que vous voulez dans le carrousel -->
+        <div class="carousel-item">
+            <H1 class="texte-bulle7">BTS SIO ALTERNANCE</H1>
+            <img src="assets/image/logo.jpg" class="line6">
+           <p><strong> Lycée Notre Dame La Riche, Tours</strong></p>
+            <p>Apprentissage BlueJ, Java, <br>algorithmie </p>
+
+        </div>
+        <!-- Ajoutez des flèches de navigation si nécessaire -->
+        <button class="carousel-button prev">&#10094;</button>
+        <button class="carousel-button next">&#10095;</button>
+      </div>
+      
     <div class="sneaker-image">
       <!-- Place your image here -->
       <img src="sneaker.jpg" alt="Sneaker Image">
