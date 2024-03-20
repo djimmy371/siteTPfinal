@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+  }
+  
+  .nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    padding: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav-icons span {
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  .sneaker-collection {
+    padding: 20px;
+  }
+  
+  .sneaker-collection h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .shop-now {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now:hover {
+    background-color: #555;
+  }
+  
+  .sneaker-image img {
+    width: 50%;
+    max-width: 300px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sneaker-image img {
+      width: 70%;
+      right: 5%;
+      bottom: 5%;
+    }
+  
+    .sneaker-collection h1 {
+      font-size: 2em;
+    }
+  }
+  
