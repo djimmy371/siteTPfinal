@@ -1,33 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const slideContainer = document.querySelector('.bulle7-container');
-  const slides = Array.from(slideContainer.children);
-  const prevBtn = document.querySelector('.prev-btn');
-  const nextBtn = document.querySelector('.next-btn');
-  let currentIndex = 0;
-  const groupSize = 2;
-  const maxIndex = Math.ceil(slides.length / groupSize) - 1;
-
-  function showSlides(index) {
-    let startIndex = index * groupSize;
-    let endIndex = startIndex + groupSize;
-
-    if (endIndex > slides.length) {
-      startIndex = slides.length - groupSize;
-      endIndex = slides.length;
-    }
-
-    slides.forEach((slide, i) => {
-      slide.style.display = (i >= startIndex && i < endIndex) ? 'block' : 'none';
-    });
+document.querySelector('.carousel-button.next').addEventListener('click', function() {
+  const current = document.querySelector('.carousel-item.active');
+  let next = current.nextElementSibling;
+  if (!next) {
+    // Si on est au dernier élément, revient au début
+    next = document.querySelector('.carousel-item:first-child');
   }
-  showSlides(currentIndex);
-  prevBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex === 0) ? maxIndex : currentIndex - 1;
-    showSlides(currentIndex);
-  });
+  current.classList.remove('active');
+  next.classList.add('active');
+});
 
-  nextBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex === maxIndex) ? 0 : currentIndex + 1;
-    showSlides(currentIndex);
-  });
-  });
+document.querySelector('.carousel-button.prev').addEventListener('click', function() {
+  const current = document.querySelector('.carousel-item.active');
+  let prev = current.previousElementSibling;
+  if (!prev) {
+    // Si on est au premier élément, va au dernier
+    prev = document.querySelector('.carousel-item:last-child');
+  }
+  current.classList.remove('active');
+  prev.classList.add('active');
+});

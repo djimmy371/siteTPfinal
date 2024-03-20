@@ -116,3 +116,44 @@
       font-size: 2em;
     }
   }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ajustez à la taille de votre choix */
+    margin: auto;
+    overflow: hidden; /* Cache le défilement */
+  }
+  
+  .carousel-item {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel-item.active {
+    display: block; /* Affiche seulement l'élément actif */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    z-index: 100;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
