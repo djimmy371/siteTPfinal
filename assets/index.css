@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(253, 253, 253);
 }
 
 html {
@@ -65,27 +65,7 @@ html {
   }
   /* Ajoutez cette règle pour s'assurer que la partie texte de la section 'sneaker-collection' est également centrée */
   
-  .shop-now {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .shop-now:hover {
-    background-color: #555;
-  }
-  
-  .sneaker-image img {
-    width: 50%;
-    max-width: 300px;
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-  }
+
 
   
   
@@ -133,7 +113,7 @@ html, body {
 }
 
 section {
-    background: #F4F4F4;
+  background-color: rgb(253, 253, 253);
     padding: 50px 0;
 }
 
@@ -219,8 +199,8 @@ section {
     }
     
     .credit {
-        margin-top: 1rem;
-        color: rgba(0, 0, 0, 0.5);
+        margin-top: 2rem;
+        color: rgb(0, 0, 0);
         display: block;        
     }
     
@@ -369,4 +349,68 @@ section {
 
 .container {
   flex-basis: 60%; /* Ajustez la largeur du carrousel */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-brand {
+    margin-right: 0;
+    margin-bottom: 20px; /* Espacement entre le logo et la navigation sur petits écrans */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nav-links li {
+    padding: 10px 0; /* Plus d'espace autour des liens pour faciliter le toucher */
+  }
+
+  .nav-icons span {
+    margin: 0 5px;
+  }
+
+  .carousel__slide,
+  .carousel__thumbnails li {
+    width: 100%; /* Pleine largeur pour les diapositives et miniatures du carrousel */
+    flex-basis: auto; /* Ajustement pour la flexibilité */
+  }
+
+  .site-info, .container {
+    flex-basis: auto; /* Permet aux éléments de s'ajuster naturellement */
+    width: 100%; /* Utilisez toute la largeur disponible */
+    padding: 0 10px; /* Petit padding pour ne pas toucher les bords */
+  }
+
+  .code-promo, .footer, .bas-page {
+    flex-direction: column;
+    text-align: center; /* Centrage du texte pour une meilleure lecture */
+  }
+
+  .text1-footer, .text2-footer {
+    margin-left: 20px; /* Ajustement des marges pour les textes dans le footer */
+    margin-top: 20px;
+    font-size: 1.2rem; /* Taille de police ajustée pour l'espace limité */
+  }
+}
+
+.nav-brand img {
+  width: 80px; /* Vous pouvez ajuster selon le besoin ou utiliser % pour plus de flexibilité */
+}
+
+.nav-icons span img {
+  height: 20px; /* Adaptation pour les petits écrans */
+  width: auto; /* Maintient le ratio d'aspect */
+}
+
+@media (max-width: 768px) {
+  /* Exemple : Masquer une icône spécifique dans la barre de navigation sur les petits écrans */
+  .nav-icons span:last-child {
+    display: none;
+  }
 }

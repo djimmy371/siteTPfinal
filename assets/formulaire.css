@@ -1,4 +1,4 @@
-ody {
+body {
     background-color: white;
   }
   
@@ -171,5 +171,58 @@ ody {
   /* Pseudo-classes pour styliser les états :hover sur le bouton */
   .form-submit:hover {
     opacity: 0.9;
+  }
+  
+  .nav-brand img {
+    width: 80px; /* Ajustez en fonction de l'espace disponible */
+  }
+  
+  .nav-brand, .nav-links li, .nav-icons span {
+    margin: 0 5px; /* Réduisez l'espacement sur les petits écrans */
+  }
+  
+  .form-group label, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
+    font-size: 1rem; /* Ajustez la taille de la police pour une meilleure lisibilité */
+  }
+
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-brand {
+      margin-bottom: 20px; /* Espacement après le logo pour la navigation sur petits écrans */
+    }
+  
+    .nav-links, .nav-icons {
+      flex-direction: column;
+    }
+  
+    .nav-links li, .nav-icons span {
+      margin: 5px 0; /* Espacement vertical entre les éléments de navigation */
+    }
+  
+    .footer, .bas-page {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .bas-page {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .bas-page img, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
+      margin: 10px 0; /* Ajoutez un peu d'espace autour des éléments pour une meilleure lisibilité */
+    }
+  
+    .contact-form {
+      padding: 10px;
+    }
+  
+    .form-input, .form-submit, .form-checkbox {
+      padding: 8px; /* Ajustement du padding pour les champs de formulaire */
+    }
   }
   
