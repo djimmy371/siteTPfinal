@@ -86,6 +86,8 @@ html {
     right: 10%;
     bottom: 10%;
   }
+
+  
   
   @media screen and (max-width: 768px) {
     .cards {
