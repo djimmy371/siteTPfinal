@@ -125,9 +125,11 @@ justify-content: center;
   right: 850px;
 }
 .button-container button {
-  background: rgba(0, 0, 0, 0.5);
+  background: grey;
+  font-family: Jost, sans-serif;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
