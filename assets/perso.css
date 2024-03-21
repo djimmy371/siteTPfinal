@@ -1,0 +1,133 @@
+body {
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-brand, .navbar, .nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand img {
+  height: auto; 
+  width: 100px; 
+}
+
+.nav-brand {
+  margin-right: 200px; 
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 20px; 
+}
+
+.nav-links li {
+  padding: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: Jost;
+}
+
+.nav-icons span {
+  margin: 0 10px; 
+}
+
+.nav-icons span img {
+  height: 24px; 
+  width: auto; 
+}
+
+.code-promo {
+width: 100%; /* Largeur du rectangle */
+height: 80px; /* Hauteur du rectangle */
+background-color: #000000; /* Couleur de fond */
+border: 2px solid #000000; /* Bordure */
+color: white; /* Couleur du texte */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.code-promo p {
+  font-family: Jost, sans-serif;
+}
+
+.produits-une {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.produits-une p {
+  font-family: Jost, sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.produits-une h1 {
+  font-family: Anton, sans-serif;
+  font-size: 3rem;
+  
+}
+
+.produits-une h1 sup {
+  font-size: 1.5rem;
+  color: grey;
+}
+.galerie-container {
+  display: flex;
+  margin-left: 400px; /* ou la valeur que vous souhaitez */
+  position: relative;
+}
+
+.galerie-thumbnails {
+  flex: 0 0 auto; /* Ne s'étend pas */
+}
+
+.gallery-main {
+  flex: 1; /* S'étend pour occuper l'espace restant */
+  margin-left: 20px; /* Espacement entre les miniatures et la grande image */
+  position: relative;
+}
+.galerie-thumbnails img {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+}
+
+.gallery-main img {
+  width: 525px;
+  height: 659px;
+  border-radius: 20px;
+}
+
+.galerie-button {
+  margin-top: 20px;
+}
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  right: 850px;
+}
+.button-container button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
