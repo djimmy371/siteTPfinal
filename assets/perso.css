@@ -114,6 +114,7 @@ justify-content: center;
   width: 502px;
   height: 659px;
   border-radius: 20px;
+  margin-left: 100px;
 }
 
 .galerie-button {
@@ -294,3 +295,43 @@ button:hover {
   font-style: italic;
 }
 
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-brand {
+    margin-bottom: 20px;
+
+  .nav-links, .nav-icons {
+    flex-direction: column;
+  }
+
+  .nav-links li, .nav-icons span {
+    margin: 5px 0;
+  }
+
+  .footer, .bas-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bas-page {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bas-page img, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
+    margin: 10px 0; 
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .form-input, .form-submit, .form-checkbox {
+    padding: 8px;
+  }
+}
+}
