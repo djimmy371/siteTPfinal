@@ -89,7 +89,7 @@ justify-content: center;
 }
 .galerie-container {
   display: flex;
-  margin-left: 400px; /* ou la valeur que vous souhaitez */
+  margin-left: 100px; /* ou la valeur que vous souhaitez */
   position: relative;
 }
 
@@ -111,7 +111,7 @@ justify-content: center;
 }
 
 .gallery-main img {
-  width: 525px;
+  width: 502px;
   height: 659px;
   border-radius: 20px;
 }
@@ -132,4 +132,224 @@ justify-content: center;
   padding: 10px;
   cursor: pointer;
   border-radius: 20px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.texte-produit {
+  font-family: Jost, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.description {
+  max-width: 500px; /* Limiter la largeur de la description pour éviter qu'elle ne prenne trop d'espace */
+  margin-left: 20px; /* Ajouter un espacement entre la galerie et la description */
+}
+
+.galerie-container {
+  display: flex;
+  margin-left: 100px; /* ou la valeur que vous souhaitez */
+  position: relative;
+}
+.nom {
+  font-family: Anton, sans-serif;
+  font-size: 3rem;
+}
+
+.square {
+  border: 2px solid black; /* Définir l'épaisseur et la couleur du cadre */
+  padding: 10px; /* Espace à l'intérieur du cadre */
+  display: inline-block; /* Pour que le cadre s'adapte à son contenu */
+}
+.taille {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ajout-panier {
+  display: flex;
+  flex-direction: row; /* Pour aligner horizontalement les éléments */
+  align-items: center;
+}
+
+select {
+  border: 2px solid black; /* Définit l'épaisseur et la couleur de la bordure */
+  border-radius: 5px; /* Arrondit les coins du contour */
+  width: 100px; /* Ajuste la largeur du select selon vos besoins */
+  font-family: Jost, sans-serif;
+  font-size: 14px; /* Ajuste la taille de la police */
+  padding: 5px 10px; /* Ajoute un espacement à l'intérieur du select */
+  width: 75px; /* Ajuste la largeur du select selon vos besoins */
+  height: 75px; /* Ajuste la hauteur du select selon vos besoins */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333; /* Change la couleur lorsqu'on survole */
+}
+.texte-produit {
+  font-family: Jost, sans-serif;
+  font-size: 1rem;
+  margin-top: -55px; /* Ajout d'un espacement */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wishlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%; /* Largeur du rectangle */
+  height: 100%; /* Hauteur du rectangle */
+  background-color: #000000; /* Couleur de fond */
+  border: 2px solid #000000; /* Bordure */
+  color: white; /* Couleur du texte */
+  display: flex;
+  margin-top: 100px;
+}
+
+.text1-footer {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.text2-footer {
+  font-family: Jost, sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.text2-footer-1 {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+.text2-footer-2 {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+.text2-footer-3 {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+
+.bas-page {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    display: flex;
+    justify-content: space-between;
+    font-family: Jost, sans-serif;
+    align-items: center; /* Pour aligner verticalement les éléments */
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.bas-page img {
+  width: 16px;
+  height: 23px;
+} 
+.Copyright {
+  width: 100%; /* Largeur du rectangle */
+  height: 100%; /* Hauteur du rectangle */
+  background-color: #000000; /* Couleur de fond */
+  border: 2px solid #000000; /* Bordure */
+  color: white; /* Couleur du texte */
+  font-family: Jost, sans-serif;
+  align-items: center; /* Pour aligner verticalement les éléments */
+  justify-content: center;
+  display: flex;
+}
+.Copyright p {
+  font-size: 2rem;
+  font-style: italic;
+}
+.header-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-brand {
+  margin-right: 0;
+  margin-bottom: 20px; 
+}
+
+.nav-links {
+  flex-direction: column;
+  margin: 0;
+}
+
+.nav-links li {
+  padding: 10px 0; 
+}
+
+.nav-icons span {
+  margin: 0 5px;
+}
+
+.carouselslide,
+.carouselthumbnails li {
+  width: 100%;
+  flex-basis: auto;
+}
+
+.site-info, .container {
+  flex-basis: auto; 
+  width: 100%; 
+  padding: 0 10px; 
+}
+
+.code-promo, .footer, .bas-page {
+  flex-direction: column;
+  text-align: center; 
+}
+
+.text1-footer, .text2-footer {
+  margin-left: 20px; 
+  margin-top: 20px;
+  font-size: 1.2rem; 
+}
+
+.nav-brand img {
+width: 80px; 
+}
+
+.nav-icons span img {
+height: 20px; 
+width: auto; 
+}
+
+@media (max-width: 768px) {
+.nav-icons span:last-child {
+  display: none;
+}
 }

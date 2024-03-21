@@ -270,7 +270,6 @@ section {
 /*.buy-now:hover {
   background-color: #0056b3; /* Couleur de fond au survol */
 /*}*/
-
 .footer {
   width: 100%; /* Largeur du rectangle */
   height: 100%; /* Hauteur du rectangle */
@@ -338,17 +337,6 @@ section {
 .Copyright p {
   font-size: 2rem;
   font-style: italic;
-}
-.main-container {
-  display: flex;
-  justify-content: space-between; /* Ajustez l'espacement entre le carrousel et le texte explicatif */
-  align-items: flex-start; /* Alignez les éléments en haut */
-  padding: 20px; /* Ajoutez du padding autour de l'ensemble pour plus d'espace */
-  gap: 20px; /* Espacement entre le carrousel et la description */
-}
-
-.container {
-  flex-basis: 60%; /* Ajustez la largeur du carrousel */
 }
 
 @media (max-width: 768px) {
