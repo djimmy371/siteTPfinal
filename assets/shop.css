@@ -1,0 +1,227 @@
+body {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-brand, .navbar, .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-brand img {
+    height: auto; 
+    width: 100px; 
+  }
+
+  .nav-brand {
+    margin-right: 200px; 
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 20px; 
+  }
+
+  .nav-links li {
+    padding: 0 10px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: Jost;
+  }
+
+  .nav-icons span {
+    margin: 0 10px; 
+  }
+
+  .nav-icons span img {
+    height: 24px; 
+    width: auto; 
+  }
+
+.code-promo {
+  width: 100%; /* Largeur du rectangle */
+  height: 80px; /* Hauteur du rectangle */
+  background-color: #000000; /* Couleur de fond */
+  border: 2px solid #000000; /* Bordure */
+  color: white; /* Couleur du texte */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.code-promo p {
+    font-family: Jost, sans-serif;
+}
+
+.produits-une {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.produits-une p {
+    font-family: Jost, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.produits-une h1 {
+    font-family: Anton, sans-serif;
+    font-size: 3rem;
+    
+}
+
+.produits-une h1 sup {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.filtres select {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    font-family: Jost, sans-serif;
+    text-align: left;
+}
+.filtres select[name="prix"] {
+    width: 70px; /* Largeur personnalisée */
+}
+.filtres select[name="trier_par"] {
+    width: 95px; /* Largeur personnalisée */
+}
+.filtres select[name="marque"] {
+    width: 92px; /* Largeur personnalisée */
+}
+.filtres select[name="genre"] {
+    width: 80px; /* Largeur personnalisée */
+}
+.produits p {
+    font-family: Jost, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+.produits {
+    margin-left: 100px;
+}
+
+.clear-filters {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    margin-right: 75px;
+    font-family: Jost, sans-serif;
+    font-size: 1.5rem;
+}
+#clearFilters {
+  cursor: pointer;
+}
+
+.produit-galerie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.taille-image {
+    width: 200px;
+    height: 200px;
+}
+.produit1 {
+  font-family: Jost, sans-serif;
+  display: block;
+}
+.produit2 {
+  font-family: Jost, sans-serif;
+  display: block;
+}
+.produit3 {
+  font-family: Jost, sans-serif;
+  display: block;
+}
+.produit4 {
+  font-family: Jost, sans-serif;
+  display: block;
+}
+.footer {
+  width: 100%; /* Largeur du rectangle */
+  height: 100%; /* Hauteur du rectangle */
+  background-color: #000000; /* Couleur de fond */
+  border: 2px solid #000000; /* Bordure */
+  color: white; /* Couleur du texte */
+  display: flex;
+}
+
+.text1-footer {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.text2-footer {
+  font-family: Jost, sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.text2-footer-1 {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+.text2-footer-2 {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+.text2-footer-3 {
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+
+.bas-page {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    display: flex;
+    justify-content: space-between;
+    font-family: Jost, sans-serif;
+    align-items: center; /* Pour aligner verticalement les éléments */
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.bas-page img {
+  width: 16px;
+  height: 23px;
+} 
+.Copyright {
+  width: 100%; /* Largeur du rectangle */
+  height: 100%; /* Hauteur du rectangle */
+  background-color: #000000; /* Couleur de fond */
+  border: 2px solid #000000; /* Bordure */
+  color: white; /* Couleur du texte */
+  font-family: Jost, sans-serif;
+  align-items: center; /* Pour aligner verticalement les éléments */
+  justify-content: center;
+  display: flex;
+}
+.Copyright p {
+  font-size: 2rem;
+  font-style: italic;
+}

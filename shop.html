@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <div class="nav-brand"> 
+            <img src="assets/img/logo.jpg" alt="logo">
+          </div>
+          <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="shop.html">Produits</a></li>
+              <li><a href="perso.html">Produits personnalisé</a></li>
+            </ul>
+          </nav>
+          <div class="nav-icons">
+            <span><img src="assets/img/search.png" alt="search"></span>
+            <span><img src="assets/img/login.png" alt="user"></span>
+            <span><img src="assets/img/coeur.png" alt="coeur"></span>
+            <span><img src="assets/img/bag.png" alt="cart"></span>
+          </div>
+        </div>
+      </header>
+    
+    <section>
+        <div class="code-promo">
+            <h1>Livraison Gratuite à partir de 50€ d'achat</h1>
+        </div>
+    </section>
+
+    <section>
+    <div class="produits-une">
+        <p>Accueil > Produits à la une</p>
+
+        <h1>PRODUITS A LA UNE <sup>(12)</sup></h1>
+    </div>
+    </section>
+
+
+    <section>
+        <div class="filtres">
+            <select name="genre">
+                <option value="">Genre</option>
+                <option value="genre">Homme</option>
+                <option value="genre">Femme</option>
+            </select>
+
+            <select name="categories" id="categories">
+                <option value="">Catégories</option>
+                <option value="chaussure">Chaussure</option>
+                <option value="pulls">Pulls</option>
+                <option value="maillots">Maillots</option>
+            </select>
+
+            <select name="marque">
+                <option value="">Marque</option>
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+                <option value="levis">Levis</option>
+                <option value="montlimar">Montlimar</option>
+                <option value="lacoste">Lacoste</option>
+                <option value="devred">Devred</option>
+                <option value="stoffa">Stoffa</option>
+                <option value="puma">puma</option>
+            </select>
+            <select id="taille" name="taille">
+                <option value="">Taille</option>
+              </select>
+
+              <select name="prix">
+                <option value="">Prix</option>
+                <option value="moins50">Moins de 50€</option>
+                <option value="50a100">50€ - 100€</option>
+                <option value="plus100">Plus de 100€</option>
+              </select>
+
+              <select name="couleur">
+                <option value="">Couleur</option>
+                <option value="rouge">Rouge</option>
+                <option value="bleu">Bleu</option>
+                <option value="vert">Vert</option>
+              </select>
+
+              <select name="plus_filtres">
+                <option value="">Plus de filtres</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </select>
+
+              <select name="trier_par">
+                <option value="">Trier par</option>
+                <option value="prix_asc">Prix croissant</option>
+                <option value="prix_desc">Prix décroissant</option>
+                <option value="date">Date</option>
+              </select>
+
+    </section>
+
+
+    <section>
+        <div class="produits">
+            <p>12 Produits</p>
+        </div>
+        
+        <div class="clear-filters">
+            <p id="clearFilters">Effacer les filtres</p>
+        </div>
+    </section>
+
+
+    <section>
+      <div class="produits-ligne1">
+      <div class="produit-galerie-container">
+        <div class="produit1">
+          <img src="assets/img/jordan.webp" alt="Image chaussure Jordan High Dior" class="taille-image">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit2">
+          <img src="assets/img/pull-montlimart.jpeg" alt="Image chaussure Jordan High Dior" class="taille-image">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit3">
+          <img src="assets/img/pull-nike.webp" alt="Image chaussure Jordan High Dior" class="taille-image">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit4">
+          <img src="assets/img/puma.avif" alt="Image chaussure Jordan High Dior" class="taille-image">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="produits-ligne2">
+      <div class="produit-galerie-container">
+        <div class="produit1">
+          <img src="assets/img/levis.webp" alt="Image chaussure Jordan High Dior" class="taille-image">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit2">
+          <img src="assets/img/pull-nike-gris.webp" alt="Image chaussure Jordan High Dior" class="montlimart">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit3">
+          <img src="assets/img/jordan-air-1-mid-.png" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit4">
+          <img src="assets/img/maillot-nike-fitness.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+      </div>
+    </div>
+    <div class="produits-ligne3">
+      <div class="produit-galerie-container">
+        <div class="produit1">
+          <img src="assets/img/sweat-nike-femme.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit2">
+          <img src="assets/img/adidas-maillot.jpeg" alt="Image chaussure Jordan High Dior" class="montlimart">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit3">
+          <img src="assets/img/chaussure-levis.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit4">
+          <img src="assets/img/chaussure-adidas.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+      </div>
+    </div>
+    <div class="produits-ligne1">
+      <div class="produit-galerie-container">
+        <div class="produit1">
+          <img src="assets/img/chaussure-femme-adidas.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit2">
+          <img src="assets/img/maillot-levis-femme.jpg" alt="Image chaussure Jordan High Dior" class="montlimart">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit3">
+          <img src="assets/img/pull-nike-homme.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+
+        <div class="produit4">
+          <img src="assets/img/chaussure-levis-femme.jpg" alt="Image chaussure Jordan High Dior" class="jordan">
+          <p>Jordan 1 High Dior</p>
+          <p>Chaussure pour hommes</p>
+          <p>9500€</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer>
+      <section>
+        <div class="footer">
+          <div class="text1-footer">
+          <p>TROUVER NOTRE MAGASIN</p>
+          <p>DEVENIR MEMBRE DU CLUB</p>
+          <p>CODE PROMO</p>
+        </div>
+
+        <div class="text2-footer">
+          <p class="text2-footer-1">OBTENIR DE L'AIDE</p>
+          <p>Suivi de commande</p>
+          <p>information de livraison</p>
+          <p>Suivi de retour</p>
+          <p>Information Mode de paiement</p>
+          <p>Contactez nous</p>
+        </div>
+
+        <div class="text2-footer">
+          <p class="text2-footer-2">A PROPOS DE DANDY'S NATION SNEAKERS & JEANS</p>
+          <p>Nouveauté</p>
+          <p>On recrute</p>
+          <p>Suivi de retour</p>
+          <p>Information Mode de paiement</p>
+          <p>Contactez nous</p>
+        </div>
+
+        <div class="text2-footer">
+          <p class="text2-footer-3">NOS RESEAUX SOCIAUX</p>
+          <img src="assets/img/Group 52.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="bas-page">
+          <img src="assets/img/logo-carte.png" alt="">
+          <p>France</p>
+          <p>Guide</p>
+          <p>Conditions d'utilisation</p>
+          <p>Conditions de vente</p>
+          <p>Mention légale</p>
+          <p>Politique de confidentialité</p>
+          <p>Conditions des cookies</p>
+          <p>Paramètre de cookies</p>
+        </div>
+        <div class="rectangle"></div>
+        <p class="Copyright">Copyright © 2021 Dandy's Nation. Tous droits réservés.</p>
+    </section>
+
+
+
+
+    </footer>
+    
+
+    <script src="assets/shop.js"></script>
+</body>
+</html>
