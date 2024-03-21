@@ -53,23 +53,17 @@ html {
     height: 24px; 
     width: auto; 
   }
-  
-  
-  /* Ajoutez cette règle pour s'assurer que la partie texte de la section 'sneaker-collection' est également centrée */
-  .sneaker-collection {
+  .code-promo {
+    width: 100%; /* Largeur du rectangle */
+    height: 80px; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Cela prend la hauteur restante de l'écran après l'en-tête */
   }
-  
-  
-  .sneaker-collection h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-  }
+  /* Ajoutez cette règle pour s'assurer que la partie texte de la section 'sneaker-collection' est également centrée */
   
   .shop-now {
     padding: 10px 20px;
@@ -94,18 +88,13 @@ html {
   }
   
   @media screen and (max-width: 768px) {
-    .sneaker-image img {
+    .cards {
       width: 70%;
       right: 5%;
       bottom: 5%;
     }
   
-    .sneaker-collection h1 {
-      font-size: 2em;
-    }
   }
-  
-  @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -134,18 +123,13 @@ input[type=radio] {
   transition: transform .4s ease;
   cursor: pointer;
 }
-
-.container {
-  width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  height: 100%;
-  transform-style: preserve-3d;
+.main-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
+
 
 .cards {
   position: relative;
@@ -202,19 +186,23 @@ img {
 
 
 
-.buy-now {
-  margin-left: 20px; /* Espacement entre le carrousel et le bouton */
+
+a.button {
+ 
   padding: 10px 20px; /* Ajustez selon vos besoins */
   background-color: #040404; /* Couleur de fond */
-  color: white; /* Couleur du texte */
+ color: white; /* Couleur du texte */
   border: none; /* Retire les bordures */
   cursor: pointer; /* Change le curseur en main */
   transition: background-color .3s; /* Animation */
+  align-items: center;
+  justify-content: center;
 }
 
-.buy-now:hover {
+/*.buy-now:hover {
   background-color: #0056b3; /* Couleur de fond au survol */
-}
+/*}*/
+
 .footer {
   width: 100%; /* Largeur du rectangle */
   height: 100%; /* Hauteur du rectangle */
@@ -282,4 +270,15 @@ img {
 .Copyright p {
   font-size: 2rem;
   font-style: italic;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between; /* Ajustez l'espacement entre le carrousel et le texte explicatif */
+  align-items: flex-start; /* Alignez les éléments en haut */
+  padding: 20px; /* Ajoutez du padding autour de l'ensemble pour plus d'espace */
+  gap: 20px; /* Espacement entre le carrousel et la description */
+}
+
+.container {
+  flex-basis: 60%; /* Ajustez la largeur du carrousel */
 }
