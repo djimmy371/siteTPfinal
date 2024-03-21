@@ -225,3 +225,62 @@ html {
   font-size: 2rem;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-brand {
+      margin-right: 0;
+  }
+
+  .nav-brand img {
+      width: 80px;
+  }
+
+  .nav-links, .nav-icons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li, .nav-icons span {
+      margin: 5px 0;
+  }
+
+  .code-promo, .footer, .bas-page {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .code-promo p, .produits-une p, .produits p, .clear-filters, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
+      font-size: smaller;
+  }
+
+  .produits-une {
+      margin: 50px 20px;
+  }
+
+  .produits {
+      margin: 0 20px;
+  }
+
+  .produit-galerie-container {
+      justify-content: center;
+  }
+
+  .taille-image {
+      width: 150px;
+      height: 150px;
+  }
+
+  .filtres select {
+      margin: 10px 0;
+  }
+
+  .clear-filters {
+      margin-right: 20px;
+  }
+}
