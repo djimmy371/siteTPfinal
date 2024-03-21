@@ -19,6 +19,7 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="shop.html">Produits</a></li>
           <li><a href="perso.html">Produits personnalisé</a></li>
+          <li><a href="formulaire.html">contact</a></li>
         </ul>
       </nav>
       <div class="nav-icons">
@@ -34,37 +35,89 @@
       <h1>Livraison Gratuite à partir de 50€ d'achat</h1>
     </div>
   </section>
-  <div class="main-container">
+  <section>
     <div class="container">
-      <input type="radio" name="slider" id="item-1" checked>
-      <input type="radio" name="slider" id="item-2">
-      <input type="radio" name="slider" id="item-3">
-      <div class="cards">
-        <label class="card" for="item-1" id="song-1">
-          <img src="assets/img/chaussure-adidas.jpg" alt="song">
-          <div class="description">Chaussure Adidas - Confort et style</div>
-        </label>
-        <label class="card" for="item-2" id="song-2">
-          <img src="assets/img/pull-nike-homme.jpg" alt="song">
-          <div class="description">Chaussure Adidas - Confort et style</div>
-        </label>
-        <label class="card" for="item-3" id="song-3">
-          <img src="assets/img/maillot-nike-fitness.jpg" alt="song">
-          <div class="description">Chaussure Adidas - Confort et style</div>
-        </label>
-      </div>
-      <a href="shop.html" class="button">Achetez maintenant</a>
-      <div class="site-info">
-        <h2>À propos du site</h2>
-        <p>Ce site offre une vaste collection de produits de mode, permettant aux utilisateurs de découvrir les
-          dernières tendances et d'acheter leurs articles préférés facilement.</p>
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/chaussure-femme-adidas.jpg" alt="">
+                        </div>
+                        <figcaption>
+                          CHAUSSURE VL COURT BOLD
+                          80 €
+                            <span class="credit">Réductions et promotions non applicables à ce produit.
+                            </span>
+                            <a href="shop.html" class="btn-decouvrir" role="button">Achetez maintenant !</a> 
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/pull-nike-homme.jpg" alt="">
+                        </div>
+                        <figcaption>
+                          Nike Solo Swoosh
+                          Sweat à capuche en tissu Fleece pour Homme
+                          99,99 €
+                            <span class="credit">Célébrez la puissance et la simplicité du Swoosh. Ce sweat à capuche en tissu Fleece brossé et chaud offre plus d’espace au niveau des épaules, de la poitrine et du corps pour un confort optimal et un style nostalgique décontracté. Les poignets et l'ourlet côtelés, épais et extensibles permettent de maintenir le sweat à capuche en place lorsque vous bougez et conservent la chaleur lorsqu'il fait froid. Notre Solo Swoosh est brodé sur le côté gauche de la poitrine pour un look épuré et décontracté.
 
-      </div>
+                              Couleur affichée : Gris foncé chiné/Blanc
+                              Article : DX1355-063</span>  
+                            <a href="shop.html" class="btn-decouvrir" role="button">Achetez maintenant !</a>                        
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/maillot-levis-femme.jpg" alt="">
+                        </div>
+                        <figcaption>
+                          T-shirt manches courtes, logo devant
+
+                            <span class="credit">T-shirt manches courtes, logo devant framboise LEVI'S
+                              Détails produit
+                               •  Manches courtes
+                               •  Col rond
+                               •  Motif devant
+                              
+                              Composition et Entretien
+                               •  100% coton
+                               •  Pour l'entretien, merci de vous référer aux indications figurant sur l'étiquette du produit
+                              
+                              Fiche produit relative aux qualités et caractéristiques environnementales
+                              • Origine de fabrication (confection) : Bangladesh
+                              Couleurs Framboise
+                              Tailles XS, S</span>   
+                            <a href="shop.html" class="btn-decouvrir" role="button">Achetez maintenant !</a> 
+                                               
+                        </figcaption>
+                    </figure>
+                </li>
+               
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="assets/img/chaussure-femme-adidas.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="assets/img/pull-nike-homme.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="assets/img/maillot-levis-femme.jpg" alt=""></label>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-  
+</section>
 
-  </div>
+ 
   <footer>
     <section>
       <div class="footer">

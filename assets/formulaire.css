@@ -1,0 +1,175 @@
+ody {
+    background-color: white;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-brand, .navbar, .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-brand img {
+    height: auto; 
+    width: 100px; 
+  }
+
+  .nav-brand {
+    margin-right: 200px; 
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 20px; 
+  }
+
+  .nav-links li {
+    padding: 0 10px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: Jost;
+  }
+
+  .nav-icons span {
+    margin: 0 10px; 
+  }
+
+  .nav-icons span img {
+    height: 24px; 
+    width: auto; 
+  }
+
+  .footer {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    display: flex;
+  }
+  
+  .text1-footer {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .text2-footer {
+    font-family: Jost, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .text2-footer-1 {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  .text2-footer-2 {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  .text2-footer-3 {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .bas-page {
+      width: 100%; /* Largeur du rectangle */
+      height: 100%; /* Hauteur du rectangle */
+      background-color: #000000; /* Couleur de fond */
+      border: 2px solid #000000; /* Bordure */
+      color: white; /* Couleur du texte */
+      display: flex;
+      justify-content: space-between;
+      font-family: Jost, sans-serif;
+      align-items: center; /* Pour aligner verticalement les éléments */
+      font-size: 1.5rem;
+      font-style: italic;
+  }
+  .bas-page img {
+    width: 16px;
+    height: 23px;
+  } 
+  .Copyright {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    font-family: Jost, sans-serif;
+    align-items: center; /* Pour aligner verticalement les éléments */
+    justify-content: center;
+    display: flex;
+  }
+  .Copyright p {
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-input, .form-submit, .form-checkbox {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Assure that paddings and borders are included in the total width and height */
+  }
+  
+  .form-input:focus, .form-checkbox:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .form-submit {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pseudo-classes pour styliser les états :focus */
+  .form-input:focus {
+    box-shadow: 0 0 5px rgba(0,123,255,.5);
+  }
+  
+  /* Pseudo-classes pour styliser les états :hover sur le bouton */
+  .form-submit:hover {
+    opacity: 0.9;
+  }
+  
