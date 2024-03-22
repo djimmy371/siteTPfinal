@@ -185,15 +185,18 @@ form .input-box span.details{
     width: 100%; /* Ajuster la largeur des champs pour qu'ils occupent toute la largeur */
   }
 
+  .contact-form .user-details .input-box input[type="text"]{
+    width: calc(96% - 20px); /* Ajuster la largeur du champ d'e-mail pour qu'il occupe toute la largeur */
+  }
   .contact-form .user-details .input-box input[type="mail"] {
-    width: 94%; /* Ajuster la largeur du champ d'e-mail pour qu'il occupe toute la largeur */
+    width: calc(96% - 20px);
   }
   .message-box textarea {
     height: 240px !important; /* Ajuster la hauteur de la zone de texte */
-    width: 375px !important; /* Utiliser toute la largeur disponible */
+    width: 379px !important; /* Utiliser toute la largeur disponible */
   }
   #problemContainer {
-    width: 375px;
+    width: 420px;
     margin-top: 20px;
   }
   .button-container .submit {

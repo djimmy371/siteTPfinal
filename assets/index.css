@@ -5,7 +5,6 @@
 @import "shop.css";
 @import "perso.css";
 
-
 body {
   background-color: rgb(253, 253, 253);
   line-height: 1.6;
@@ -13,80 +12,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
- Main 
- .img-container { 
-   float: right; 
-  margin-left: 20px;
-} 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 200px;
-  position: relative;
-}
-.carousel {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel-item {
-  min-width: 30%;
-  display: none;
-  transition: 0.5s ease;
-}
-
-.carousel-item.active {
-  display: block;
-}
-
-
-.text-wrapper {
-  position: absolute;
-  top: 58%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-}
-.image-fond {
-  top: 58%;
-}
-
-.text1 {
-  margin-bottom: 10px; 
-}
-
-.text1 {
-  margin-top: 10px; 
-  font-family: Jost, sans-serif;
-  font-weight: bold; 
-  font-size: 1.5rem; 
-}
-.text2 {
-  margin-top: 10px; 
-  font-family: sofia-pro, sans-serif;
-  font-weight: bold; 
-  font-size: 3rem;
-  letter-spacing: 5px;
-}
-
-.text3 {
-  display: flex;
-  align-items: center;
-  color: black !important;
-  padding: 10px 15px;
-  text-decoration: none;
-  background-color: white;
-  box-shadow: 
-    0 0 0 2px black; 
-    border-radius: 1px;
-    font-size: 2rem;
-    font-family: Jost;
-}
-.text3:hover {
-  background-color: black;
-  color: white !important;
 }
 
 .fleche-gauche,
@@ -98,5 +23,113 @@ html {
 
 .slide1,
 .slide2 {
-margin-right: 200px;
+  margin-right: 200px;
+}
+
+.text1 {
+  margin-top: 10px;
+  font-family: Jost, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.text2 {
+  margin-top: 10px;
+  font-family: sofia-pro, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.text3 {
+  display: flex;
+  align-items: center;
+  color: black !important;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 1px;
+  font-size: 2rem;
+  font-family: Jost;
+}
+.text3:hover {
+  background-color: black;
+  color: white !important;
+}
+
+@media (max-width: 835px) {
+  .image-fond {
+    width: 100vw;
+  }
+}
+@media (min-width: 836px) and (max-width: 1200px) {
+  .image-fond {
+    margin-left: 35rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .carousel {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .image-fond {
+    margin-left: 35rem;
+  }
+
+  .carousel-item {
+    min-width: 30%;
+    display: none;
+    transition: 0.5s ease;
+  }
+
+  .carousel-item.active {
+    display: block;
+  }
+
+  .text-wrapper {
+    position: absolute;
+    top: 58%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .text2 {
+    margin-top: 10px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  .text3 {
+    display: flex;
+    align-items: center;
+    color: black !important;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 0 0 0 2px black;
+    border-radius: 1px;
+    font-size: 2rem;
+    font-family: Jost;
+  }
+  .text3:hover {
+    background-color: black;
+    color: white !important;
+  }
 }

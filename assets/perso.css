@@ -35,7 +35,6 @@ html {
 }
 .galerie-container {
   display: flex;
-  margin-left: 100px; /* ou la valeur que vous souhaitez */
   position: relative;
 }
 
@@ -45,8 +44,8 @@ html {
 
 .gallery-main {
   flex: 1; /* S'étend pour occuper l'espace restant */
-  margin-left: 20px; /* Espacement entre les miniatures et la grande image */
   position: relative;
+  margin-inline: 10rem 2rem;
 }
 
 .galerie-thumbnails img {
@@ -61,7 +60,6 @@ html {
   width: 502px;
   height: 659px;
   border-radius: 20px;
-  margin-left: 100px;
 }
 
 .galerie-button {
@@ -172,7 +170,55 @@ button:hover {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+/* Tablette */
+
+@media (min-width: 836px) and (max-width: 1200px) {
+  .gallery-main {
+    display: flex;
+    justify-content: center;
+    margin-inline: 2rem;
+  }
+  .nav-icons span:last-child {
+    display: none;
+  }
+}
+
+/* Dekstop */
+
+@media (min-width: 1201px) {
+  .nav-icons span:last-child {
+    display: none;
+  }
+  .galerie-container {
+    margin-left: 100px; /* ou la valeur que vous souhaitez */
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 835px) {
+  .galerie-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 1rem;
+  }
+  .galerie-thumbnails {
+    display: none; /* Masquer le conteneur de la galerie */
+  }
+  .gallery-main {
+    display: flex;
+    justify-content: center;
+    margin-inline: 2rem;
+  }
+  .gallery-main img {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+  }
+  .texte-produit {
+    margin: 0;
+  }
+
   .carousel__slide,
   .carousel__thumbnails li {
     width: 100%; /* Pleine largeur pour les diapositives et miniatures du carrousel */
@@ -198,27 +244,5 @@ button:hover {
     margin-left: 20px; /* Ajustement des marges pour les textes dans le footer */
     margin-top: 20px;
     font-size: 1.2rem; /* Taille de police ajustée pour l'espace limité */
-  }
-}
-
-@media (min-width: 768px) {
-  /* Exemple : Masquer une icône spécifique dans la barre de navigation sur les petits écrans */
-  .nav-icons span:last-child {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .galerie-container {
-    display: none; /* Masquer le conteneur de la galerie */
-  }
-  .gallery-main img {
-    width: 80vw;
-    height: 80vw;
-    margin: 0 auto;
-  }
-
-  /* Retirer les modifications qui cachent l'image principale */
-  .gallery-main {
-    margin-left: auto; /* Centrer l'image principale en retirant la marge */
   }
 }
