@@ -1,228 +1,225 @@
+@import "nav.css";
+@import "homepage.css";
+@import "footer.css";
+@import "formulaire.css";
+@import "shop.css";
+@import "perso.css";
 body {
-    background-color: white;
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* contact  */
+
+.contact-form {
+  margin-left: 600px;
+}
+.user-details .input-box:nth-child(3) {
+  margin-top: 20px; /* Ajouter une marge supérieure pour descendre le champ "EMAIL" */
+}
+
+.content-wrapper {
+  margin-left: 70px;
+
+}
+.contact-section{
+  max-width: 700px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  margin-left: 650px;
+}
+.contact-section .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.contact-section .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-family: sofia-pro;
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -660px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(112% / 2 - 20px);
+}
+
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box textarea,
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background-color: black; /* Définition de la couleur de fond en noir */
+  color: white; /* Définition de la couleur du texte en blanc */
+}
+
+.user-details .input-box:first-child {
+  margin-right: 0px; /* Ajouter une marge à droite du champ "Nom" */
+}
+
+.user-details .input-box input[type="mail"] {
+  width: 702px; /* Définir une largeur absolue pour le champ d'e-mail */
+}
+
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button textarea,
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+
+  user-details {
+    margin-bottom: 20px; /* Ajout de marge en bas pour séparer la section "Email" */
   }
   
-  html {
-    scroll-behavior: smooth;
+  .message-box {
+    margin-right: 200px;
+    margin-top: 20px; /* Augmenter la marge en haut pour déplacer la section "Message" vers le bas */
   }
-
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .nav-brand, .navbar, .nav-icons {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-brand img {
-    height: auto; 
-    width: 100px; 
-  }
-
-  .nav-brand {
-    margin-right: 200px; 
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0 20px; 
-  }
-
-  .nav-links li {
-    padding: 0 10px;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    font-family: Jost;
-  }
-
-  .nav-icons span {
-    margin: 0 10px; 
-  }
-
-  .nav-icons span img {
-    height: 24px; 
-    width: auto; 
-  }
-
-  .footer {
-    width: 100%; /* Largeur du rectangle */
-    height: 100%; /* Hauteur du rectangle */
-    background-color: #000000; /* Couleur de fond */
-    border: 2px solid #000000; /* Bordure */
-    color: white; /* Couleur du texte */
-    display: flex;
+  .message-box textarea {
+    height: 240px !important; /* Ajuster la hauteur de la zone de texte */
+    width: 702px !important; /* Utiliser toute la largeur disponible */
   }
   
-  .text1-footer {
-    font-family: Anton, sans-serif;
-    font-size: 1.5rem;
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 100px;
+  #problemContainer {
+    width: 1300px;
+    margin-top: 20px;
   }
-  .text2-footer {
-    font-family: Jost, sans-serif;
-    font-size: 1.5rem;
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 100px;
-  }
-  .text2-footer-1 {
-    font-family: Anton, sans-serif;
-    font-size: 1.5rem;
-  }
-  .text2-footer-2 {
-    font-family: Anton, sans-serif;
-    font-size: 1.5rem;
-  }
-  .text2-footer-3 {
-    font-family: Anton, sans-serif;
-    font-size: 1.5rem;
-  }
-  
-  .bas-page {
-      width: 100%; /* Largeur du rectangle */
-      height: 100%; /* Hauteur du rectangle */
-      background-color: #000000; /* Couleur de fond */
-      border: 2px solid #000000; /* Bordure */
-      color: white; /* Couleur du texte */
-      display: flex;
-      justify-content: space-between;
-      font-family: Jost, sans-serif;
-      align-items: center; /* Pour aligner verticalement les éléments */
-      font-size: 1.5rem;
-      font-style: italic;
-  }
-  .bas-page img {
-    width: 16px;
-    height: 23px;
-  } 
-  .Copyright {
-    width: 100%; /* Largeur du rectangle */
-    height: 100%; /* Hauteur du rectangle */
-    background-color: #000000; /* Couleur de fond */
-    border: 2px solid #000000; /* Bordure */
-    color: white; /* Couleur du texte */
-    font-family: Jost, sans-serif;
-    align-items: center; /* Pour aligner verticalement les éléments */
-    justify-content: center;
-    display: flex;
-  }
-  .Copyright p {
-    font-size: 2rem;
-    font-style: italic;
+  .button-container .submit {
+  width: 150px; /* Définir une largeur fixe pour les boutons */
+  height: 50px; /* Définir une hauteur fixe pour les boutons */
+  border: none; /* Supprimer la bordure par défaut */
+  border-radius: 0; /* Supprimer les coins arrondis */
+  background-color: black; /* Couleur de fond grise pour les boutons */
+  margin-bottom: 200px;
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+}
+.button-container .reset {
+  width: 150px; /* Définir une largeur fixe pour les boutons */
+  height: 50px; /* Définir une hauteur fixe pour les boutons */
+  border: none; /* Supprimer la bordure par défaut */
+  border-radius: 0; /* Supprimer les coins arrondis */
+  background-color: black; /* Couleur de fond grise pour les boutons */
+  margin-bottom: 200px;
+  font-family: Anton, sans-serif;
+  font-size: 1.5rem;
+  margin-right: 40px;
+}
+
+.button-container .reset:hover,
+.button-container .submit:hover {
+    background-color: white; /* Couleur de fond au survol */
+    color: black;
   }
 
+  
+
+
+@media (max-width: 768px) {
   .contact-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-input, .form-submit, .form-checkbox {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box; /* Assure that paddings and borders are included in the total width and height */
-  }
-  
-  .form-input:focus, .form-checkbox:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .form-submit {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .form-submit:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Pseudo-classes pour styliser les états :focus */
-  .form-input:focus {
-    box-shadow: 0 0 5px rgba(0,123,255,.5);
-  }
-  
-  /* Pseudo-classes pour styliser les états :hover sur le bouton */
-  .form-submit:hover {
-    opacity: 0.9;
-  }
-  
-  .nav-brand img {
-    width: 80px; /* Ajustez en fonction de l'espace disponible */
-  }
-  
-  .nav-brand, .nav-links li, .nav-icons span {
-    margin: 0 5px; /* Réduisez l'espacement sur les petits écrans */
-  }
-  
-  .form-group label, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
-    font-size: 1rem; /* Ajustez la taille de la police pour une meilleure lisibilité */
+    margin-left: 0; /* Réinitialiser la marge à gauche pour les écrans encore plus petits */
   }
 
-  @media (max-width: 768px) {
-    .header-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nav-brand {
-      margin-bottom: 20px; /* Espacement après le logo pour la navigation sur petits écrans */
-    }
-  
-    .nav-links, .nav-icons {
-      flex-direction: column;
-    }
-  
-    .nav-links li, .nav-icons span {
-      margin: 5px 0; /* Espacement vertical entre les éléments de navigation */
-    }
-  
-    .footer, .bas-page {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .bas-page {
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .bas-page img, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
-      margin: 10px 0; /* Ajoutez un peu d'espace autour des éléments pour une meilleure lisibilité */
-    }
-  
-    .contact-form {
-      padding: 10px;
-    }
-  
-    .form-input, .form-submit, .form-checkbox {
-      padding: 8px; /* Ajustement du padding pour les champs de formulaire */
-    }
+  .contact-form .user-details .input-box {
+    width: 100%; /* Ajuster la largeur des champs pour qu'ils occupent toute la largeur */
+  }
+
+  .contact-form .user-details .input-box input[type="mail"] {
+    width: 94%; /* Ajuster la largeur du champ d'e-mail pour qu'il occupe toute la largeur */
+  }
+  .message-box textarea {
+    height: 240px !important; /* Ajuster la hauteur de la zone de texte */
+    width: 375px !important; /* Utiliser toute la largeur disponible */
+  }
+  #problemContainer {
+    width: 375px;
+    margin-top: 20px;
+  }
+  .button-container .submit {
+    width: 150px; /* Définir une largeur fixe pour les boutons */
+    height: 50px; /* Définir une hauteur fixe pour les boutons */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 0; /* Supprimer les coins arrondis */
+    background-color: black; /* Couleur de fond grise pour les boutons */
+    margin-bottom: 200px;
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  .button-container .reset {
+    width: 100px; /* Définir une largeur fixe pour les boutons */
+    height: 50px; /* Définir une hauteur fixe pour les boutons */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 0; /* Supprimer les coins arrondis */
+    background-color: black; /* Couleur de fond grise pour les boutons */
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
   }
   
+  .button-container .reset:hover,
+  .button-container .submit:hover {
+      background-color: white; /* Couleur de fond au survol */
+      color: black;
+    }
+
+}

@@ -1,404 +1,100 @@
+@import "nav.css";
+@import "homepage.css";
+@import "footer.css";
+@import "formulaire.css";
+@import "shop.css";
+@import "perso.css";
+
+
 body {
   background-color: rgb(253, 253, 253);
+  line-height: 1.6;
 }
 
 html {
   scroll-behavior: smooth;
 }
-  
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
 
-  .nav-brand, .navbar, .nav-icons {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-brand img {
-    height: auto; 
-    width: 100px; 
-  }
-
-  .nav-brand {
-    margin-right: 200px; 
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0 20px; 
-  }
-
-  .nav-links li {
-    padding: 0 10px;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    font-family: Jost;
-  }
-
-  .nav-icons span {
-    margin: 0 10px; 
-  }
-
-  .nav-icons span img {
-    height: 24px; 
-    width: auto; 
-  }
-  .code-promo {
-    width: 100%; /* Largeur du rectangle */
-    height: 80px; /* Hauteur du rectangle */
-    background-color: #000000; /* Couleur de fond */
-    border: 2px solid #000000; /* Bordure */
-    color: white; /* Couleur du texte */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  /* Ajoutez cette règle pour s'assurer que la partie texte de la section 'sneaker-collection' est également centrée */
-  
-
-
-  
-  
-  @media screen and (max-width: 768px) {
-    .cards {
-      width: 70%;
-      right: 5%;
-      bottom: 5%;
-    }
-  
-  }
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-@mixin aspect-ratio($width, $height) {
-  position: relative;
-    
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-    
-  > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-  }
-}
-
-section {
-  background-color: rgb(253, 253, 253);
-    padding: 50px 0;
-}
-
-.container {
-    max-width: 1044px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.carousel {
-    display: block;
-    text-align: left;
-    position: relative;
-    margin-bottom: 22px;
-    
-    > input {
-        clip: rect(1px, 1px, 1px, 1px);
-        clip-path: inset(50%);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        
-       
-        &:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -200%; }
-        &:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -100%; }
-        &:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 0%; }
-        
-        &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-        &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-        &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-       
-    }
-}
-
-.carousel__slides {
-    position: relative;
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    display: flex;
-}
-
-.carousel__slide {
-    position: relative;
-    display: block;
-    flex: 1 0 100%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 300ms ease-out;
-    vertical-align: top;
-    box-sizing: border-box;
-    white-space: normal;
-    
-    figure {
-        display: flex;
-        margin: 0;
-    }
-    
-    div {
-        @include aspect-ratio(3, 2);
-        width: 100%;
-    }
-    
-    img {
-        display: block;
-        flex: 1 1 auto;
-        object-fit: cover;
-    }
-    
-    figcaption {
-        align-self: flex-end;
-        padding: 20px 20px 0 20px;
-        flex: 0 0 auto;
-        width: 25%;
-        min-width: 150px;
-    }
-    
-    .credit {
-        margin-top: 2rem;
-        color: rgb(0, 0, 0);
-        display: block;        
-    }
-    
-    &.scrollable {
-        overflow-y: scroll;
-    }
-}
-
-.carousel__thumbnails {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    
-    margin: 0 -10px;
-    
-    .carousel__slides + & {
-        margin-top: 20px;
-    }
-    
-    li {        
-        flex: 1 1 auto;
-        max-width: calc((100% / 6) - 20px);  
-        margin: 0 10px;
-        transition: all 300ms ease-in-out;
-    }
-    
-    label {
-        display: block;
-        @include aspect-ratio(1,1);
-        
-                  
-        &:hover,
-        &:focus {
-            cursor: pointer;
-            
-            img {
-                box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
-                transition: all 300ms ease-in-out;
-            }
-        }
-    }
-    
-    img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-
-
-
-.btn-decouvrir {
-  height: 50px;
-  width: 300%;
-  color: white !important;
-  font-family: Bangers;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: rgb(0, 0, 0);
-  border-radius: 30px;
-  box-shadow: 0 0 0 2px rgb(0, 0, 0), 0 0 0 5px black;
-}
-
-/*.buy-now:hover {
-  background-color: #0056b3; /* Couleur de fond au survol */
-/*}*/
-.footer {
-  width: 100%; /* Largeur du rectangle */
-  height: 100%; /* Hauteur du rectangle */
-  background-color: #000000; /* Couleur de fond */
-  border: 2px solid #000000; /* Bordure */
-  color: white; /* Couleur du texte */
-  display: flex;
-}
-
-.text1-footer {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 100px;
-}
-.text2-footer {
-  font-family: Jost, sans-serif;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 100px;
-}
-.text2-footer-1 {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-}
-.text2-footer-2 {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-}
-.text2-footer-3 {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-}
-
-.bas-page {
-    width: 100%; /* Largeur du rectangle */
-    height: 100%; /* Hauteur du rectangle */
-    background-color: #000000; /* Couleur de fond */
-    border: 2px solid #000000; /* Bordure */
-    color: white; /* Couleur du texte */
-    display: flex;
-    justify-content: space-between;
-    font-family: Jost, sans-serif;
-    align-items: center; /* Pour aligner verticalement les éléments */
-    font-size: 1.5rem;
-    font-style: italic;
-}
-.bas-page img {
-  width: 16px;
-  height: 23px;
+ Main 
+ .img-container { 
+   float: right; 
+  margin-left: 20px;
 } 
-.Copyright {
-  width: 100%; /* Largeur du rectangle */
-  height: 100%; /* Hauteur du rectangle */
-  background-color: #000000; /* Couleur de fond */
-  border: 2px solid #000000; /* Bordure */
-  color: white; /* Couleur du texte */
-  font-family: Jost, sans-serif;
-  align-items: center; /* Pour aligner verticalement les éléments */
-  justify-content: center;
+.container {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 200px;
+  position: relative;
 }
-.Copyright p {
-  font-size: 2rem;
-  font-style: italic;
-}
-
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-brand {
-    margin-right: 0;
-    margin-bottom: 20px; /* Espacement entre le logo et la navigation sur petits écrans */
-  }
-
-  .nav-links {
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .nav-links li {
-    padding: 10px 0; /* Plus d'espace autour des liens pour faciliter le toucher */
-  }
-
-  .nav-icons span {
-    margin: 0 5px;
-  }
-
-  .carousel__slide,
-  .carousel__thumbnails li {
-    width: 100%; /* Pleine largeur pour les diapositives et miniatures du carrousel */
-    flex-basis: auto; /* Ajustement pour la flexibilité */
-  }
-
-  .site-info, .container {
-    flex-basis: auto; /* Permet aux éléments de s'ajuster naturellement */
-    width: 100%; /* Utilisez toute la largeur disponible */
-    padding: 0 10px; /* Petit padding pour ne pas toucher les bords */
-  }
-
-  .code-promo, .footer, .bas-page {
-    flex-direction: column;
-    text-align: center; /* Centrage du texte pour une meilleure lecture */
-  }
-
-  .text1-footer, .text2-footer {
-    margin-left: 20px; /* Ajustement des marges pour les textes dans le footer */
-    margin-top: 20px;
-    font-size: 1.2rem; /* Taille de police ajustée pour l'espace limité */
-  }
+.carousel {
+  display: flex;
+  overflow: hidden;
 }
 
-.nav-brand img {
-  width: 80px; /* Vous pouvez ajuster selon le besoin ou utiliser % pour plus de flexibilité */
+.carousel-item {
+  min-width: 100%;
+  display: none;
+  transition: 0.5s ease;
 }
 
-.nav-icons span img {
-  height: 20px; /* Adaptation pour les petits écrans */
-  width: auto; /* Maintient le ratio d'aspect */
+.carousel-item.active {
+  display: block;
+}
+.text-wrapper {
+  position: absolute;
+  top: 58%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.image-fond {
+  top: 58%;
 }
 
-@media (max-width: 768px) {
-  /* Exemple : Masquer une icône spécifique dans la barre de navigation sur les petits écrans */
-  .nav-icons span:last-child {
-    display: none;
-  }
+.text1 {
+  margin-bottom: 10px; 
+}
+
+.text1 {
+  margin-top: 10px; 
+  font-family: Jost, sans-serif;
+  font-weight: bold; 
+  font-size: 1.5rem; 
+}
+.text2 {
+  margin-top: 10px; 
+  font-family: sofia-pro, sans-serif;
+  font-weight: bold; 
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.text3 {
+  display: flex;
+  align-items: center;
+  color: black !important;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 
+    0 0 0 2px black; 
+    border-radius: 1px;
+    font-size: 2rem;
+    font-family: Jost;
+}
+.text3:hover {
+  background-color: black;
+  color: white !important;
+}
+
+.fleche-gauche,
+.fleche-droite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide1,
+.slide2 {
+margin-right: 200px;
 }

@@ -50,24 +50,50 @@ document.addEventListener("DOMContentLoaded", function() {
         const couleur = document.querySelector('select[name="couleur"]').value;
 
         produits.forEach(produit => {
-            const produitGenre = produit.querySelector('p:nth-of-type(2)').textContent.toLowerCase();
-            const produitCategorie = produit.querySelector('p:nth-of-type(3)').textContent.toLowerCase();
-            const produitMarque = produit.querySelector('img').alt.toLowerCase();
-            // Ajoutez d'autres variables pour la taille, le prix et la couleur si nécessaire
+            const produitGenre = produit.getAttribute('data-genre');
+            const produitCategorie = produit.getAttribute('data-categorie');
+            const produitMarque = produit.getAttribute('data-marque');
+            const produitTaille = produit.getAttribute('data-taille');
+            const produitPrix = produit.getAttribute('data-prix');
+            const produitCouleur = produit.getAttribute('data-couleur');
 
-            // Vérifiez si le produit correspond aux critères sélectionnés
-            const correspondGenre = genre === '' || produitGenre.includes(genre.toLowerCase());
-            const correspondCategorie = categorie === '' || produitCategorie.includes(categorie.toLowerCase());
-            const correspondMarque = marque === '' || produitMarque.includes(marque.toLowerCase());
-            // Ajoutez d'autres conditions pour la taille, le prix et la couleur si nécessaire
+            const correspondGenre = genre === '' || (produitGenre && produitGenre.toLowerCase().includes(genre.toLowerCase()));
+            const correspondCategorie = categorie === '' || (produitCategorie && produitCategorie.toLowerCase().includes(categorie.toLowerCase()));
+            const correspondMarque = marque === '' || (produitMarque && produitMarque.toLowerCase().includes(marque.toLowerCase()));
+            const correspondTaille = taille === '' || (produitTaille && produitTaille.toLowerCase().split(',').includes(taille.toLowerCase()));
+            const correspondPrix = prix === '' || (produitPrix && (prix === 'plus100' && parseFloat(produitPrix) > 100));
+            const correspondCouleur = couleur === '' || (produitCouleur && produitCouleur.toLowerCase() === couleur.toLowerCase());
 
-            // Affichez ou masquez le produit en fonction des critères
-            if (correspondGenre && correspondCategorie && correspondMarque) {
+            if (correspondGenre && correspondCategorie && correspondMarque && correspondTaille && correspondPrix && correspondCouleur) {
                 produit.style.display = 'block';
             } else {
                 produit.style.display = 'none';
             }
         });
+    }
+
+    // Fonction pour réinitialiser les filtres
+    function resetFilters() {
+        console.log("Filtres réinitialisés");
+        // Réinitialiser les valeurs de tous les éléments de filtre à leur valeur par défaut
+        var selectElements = document.querySelectorAll('.filtres select');
+        selectElements.forEach(function(select) {
+            select.selectedIndex = 0;
+        });
+    
+        // Réappliquer les filtres après avoir réinitialisé
+        filtrerProduits();
+    }
+
+    // Appeler la fonction pour réinitialiser les filtres au chargement de la page
+    resetFilters();
+
+    // Écouteur d'événement pour effacer les filtres
+    var clearFiltersButton = document.getElementById("clearFilters");
+    if (clearFiltersButton) {
+        clearFiltersButton.addEventListener("click", resetFilters);
+    } else {
+        console.error("L'élément clearFilters n'a pas été trouvé.");
     }
 
     // Ajoutez des écouteurs d'événements pour les changements dans les sélecteurs de filtres

@@ -1,0 +1,84 @@
+/*.buy-now:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+/*}*/
+.footer {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    display: flex;
+    margin-top: 300px;
+  }
+  
+  .text1-footer {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .text2-footer {
+    font-family: Jost, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .text2-footer-1 {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  .text2-footer-2 {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  .text2-footer-3 {
+    font-family: Anton, sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .bas-page {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Jost, sans-serif;
+    align-items: center; /* Pour aligner verticalement les éléments */
+    font-size: 1.6rem;
+    font-style: italic;
+  }
+  .bas-page img {
+    margin-right: 10px; /* Espacement entre l'image et les paragraphes */
+  }
+  
+  .bas-page p {
+    margin-right: 10px; /* Espacement entre les paragraphes */
+  }
+  
+  .bas-page .copyright {
+    width: 100%; /* Force l'élément à prendre toute la largeur */
+    text-align: center; /* Centre le texte horizontalement */
+    margin-top: 10px; /* Espacement entre le dernier paragraphe et le copyright */
+  }
+  .Copyright {
+    width: 100%; /* Largeur du rectangle */
+    height: 100%; /* Hauteur du rectangle */
+    background-color: #000000; /* Couleur de fond */
+    border: 2px solid #000000; /* Bordure */
+    color: white; /* Couleur du texte */
+    font-family: Jost, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .Copyright p {
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 100px;
+  }
+  

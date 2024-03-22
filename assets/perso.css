@@ -1,69 +1,16 @@
+@import "nav.css";
+@import "homepage.css";
+@import "footer.css";
+@import "formulaire.css";
+@import "shop.css";
+@import "perso.css";
+
 body {
   background-color: white;
 }
 
 html {
   scroll-behavior: smooth;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.nav-brand, .navbar, .nav-icons {
-  display: flex;
-  align-items: center;
-}
-
-.nav-brand img {
-  height: auto; 
-  width: 100px; 
-}
-
-.nav-brand {
-  margin-right: 200px; 
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0 20px; 
-}
-
-.nav-links li {
-  padding: 0 10px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-size: 16px;
-  font-family: Jost;
-}
-
-.nav-icons span {
-  margin: 0 10px; 
-}
-
-.nav-icons span img {
-  height: 24px; 
-  width: auto; 
-}
-
-.code-promo {
-width: 100%; /* Largeur du rectangle */
-height: 80px; /* Hauteur du rectangle */
-background-color: #000000; /* Couleur de fond */
-border: 2px solid #000000; /* Bordure */
-color: white; /* Couleur du texte */
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.code-promo p {
-  font-family: Jost, sans-serif;
 }
 
 .produits-une {
@@ -80,7 +27,6 @@ justify-content: center;
 .produits-une h1 {
   font-family: Anton, sans-serif;
   font-size: 3rem;
-  
 }
 
 .produits-une h1 sup {
@@ -102,6 +48,7 @@ justify-content: center;
   margin-left: 20px; /* Espacement entre les miniatures et la grande image */
   position: relative;
 }
+
 .galerie-thumbnails img {
   display: block;
   margin-bottom: 10px;
@@ -225,113 +172,53 @@ button:hover {
   margin-top: 20px;
 }
 
-.footer {
-  width: 100%; /* Largeur du rectangle */
-  height: 100%; /* Hauteur du rectangle */
-  background-color: #000000; /* Couleur de fond */
-  border: 2px solid #000000; /* Bordure */
-  color: white; /* Couleur du texte */
-  display: flex;
-  margin-top: 100px;
-}
-
-.text1-footer {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 100px;
-}
-.text2-footer {
-  font-family: Jost, sans-serif;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 100px;
-}
-.text2-footer-1 {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-}
-.text2-footer-2 {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-}
-.text2-footer-3 {
-  font-family: Anton, sans-serif;
-  font-size: 1.5rem;
-}
-
-.bas-page {
-    width: 100%; /* Largeur du rectangle */
-    height: 100%; /* Hauteur du rectangle */
-    background-color: #000000; /* Couleur de fond */
-    border: 2px solid #000000; /* Bordure */
-    color: white; /* Couleur du texte */
-    display: flex;
-    justify-content: space-between;
-    font-family: Jost, sans-serif;
-    align-items: center; /* Pour aligner verticalement les éléments */
-    font-size: 1.5rem;
-    font-style: italic;
-}
-.bas-page img {
-  width: 16px;
-  height: 23px;
-} 
-.Copyright {
-  width: 100%; /* Largeur du rectangle */
-  height: 100%; /* Hauteur du rectangle */
-  background-color: #000000; /* Couleur de fond */
-  border: 2px solid #000000; /* Bordure */
-  color: white; /* Couleur du texte */
-  font-family: Jost, sans-serif;
-  align-items: center; /* Pour aligner verticalement les éléments */
-  justify-content: center;
-  display: flex;
-}
-.Copyright p {
-  font-size: 2rem;
-  font-style: italic;
-}
-
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
+  .carousel__slide,
+  .carousel__thumbnails li {
+    width: 100%; /* Pleine largeur pour les diapositives et miniatures du carrousel */
+    flex-basis: auto; /* Ajustement pour la flexibilité */
   }
 
-  .nav-brand {
-    margin-bottom: 20px;
-
-  .nav-links, .nav-icons {
-    flex-direction: column;
+  .site-info,
+  .container {
+    flex-basis: auto; /* Permet aux éléments de s'ajuster naturellement */
+    width: 100%; /* Utilisez toute la largeur disponible */
+    /* Petit padding pour ne pas toucher les bords */
   }
 
-  .nav-links li, .nav-icons span {
-    margin: 5px 0;
-  }
-
-  .footer, .bas-page {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  .code-promo,
+  .footer,
   .bas-page {
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Centrage du texte pour une meilleure lecture */
   }
 
-  .bas-page img, .text1-footer, .text2-footer, .text2-footer-1, .text2-footer-2, .text2-footer-3 {
-    margin: 10px 0; 
-  }
-
-  .contact-form {
-    padding: 10px;
-  }
-
-  .form-input, .form-submit, .form-checkbox {
-    padding: 8px;
+  .text1-footer,
+  .text2-footer {
+    margin-left: 20px; /* Ajustement des marges pour les textes dans le footer */
+    margin-top: 20px;
+    font-size: 1.2rem; /* Taille de police ajustée pour l'espace limité */
   }
 }
+
+@media (min-width: 768px) {
+  /* Exemple : Masquer une icône spécifique dans la barre de navigation sur les petits écrans */
+  .nav-icons span:last-child {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .galerie-container {
+    display: none; /* Masquer le conteneur de la galerie */
+  }
+  .gallery-main img {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+  }
+
+  /* Retirer les modifications qui cachent l'image principale */
+  .gallery-main {
+    margin-left: auto; /* Centrer l'image principale en retirant la marge */
+  }
 }
