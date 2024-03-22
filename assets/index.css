@@ -33,7 +33,7 @@ html {
 }
 
 .carousel-item {
-  min-width: 100%;
+  min-width: 30%;
   display: none;
   transition: 0.5s ease;
 }
@@ -41,6 +41,8 @@ html {
 .carousel-item.active {
   display: block;
 }
+
+
 .text-wrapper {
   position: absolute;
   top: 58%;
