@@ -142,6 +142,9 @@ select {
   width: 75px; /* Ajuste la largeur du select selon vos besoins */
   height: 75px; /* Ajuste la hauteur du select selon vos besoins */
 }
+.image-gallery-main {
+  object-fit: cover;
+}
 
 button {
   padding: 10px 20px;

@@ -88,14 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Appeler la fonction pour réinitialiser les filtres au chargement de la page
     resetFilters();
 
-    // Écouteur d'événement pour effacer les filtres
-    var clearFiltersButton = document.getElementById("clearFilters");
-    if (clearFiltersButton) {
-        clearFiltersButton.addEventListener("click", resetFilters);
-    } else {
-        console.error("L'élément clearFilters n'a pas été trouvé.");
-    }
-
     // Ajoutez des écouteurs d'événements pour les changements dans les sélecteurs de filtres
     document.querySelectorAll('.filtres select').forEach(select => {
         select.addEventListener('change', filtrerProduits);

@@ -1,144 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Page d'Accueil" />
-    <title>Dandy's Sneakers Tee-Shirt Nation</title>
-    <link rel="stylesheet" href="assets/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="assets/img/logo.jpg" alt="logo" />
-        </a>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="shop.html">Produits</a></li>
-          <li><a href="perso.html">Produits personnalisé</a></li>
-          <li><a href="formulaire.html">Contact</a></li>
-        </ul>
-        <div class="icon">
-          <span><img src="assets/img/search.png" alt="search" /></span>
-          <span id="loginIcon" onclick="openPopup();">
-            <img src="assets/img/login.png" alt="user" />
-          </span>
-          <span><img src="assets/img/coeur.png" alt="coeur" /></span>
-          <span><img src="assets/img/bag.png" alt="cart" /></span>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page d'Accueil" />
+  <title>Dandy's Sneakers Tee-Shirt Nation</title>
+  <link rel="stylesheet" href="assets/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
 
-    <main>
-      <section>
-        <div class="container">
-          <div class="carousel">
-            <div class="text-wrapper">
-              <p class="text1">Sneaker Collection</p>
-              <p class="text2">
-                GOOD PLACE
-                <br />
-                TO BUY
-                <br />
-                YOUR SNEAKERS
-              </p>
-              <button class="text3" onclick="window.location.href='shop.html';">
-                SHOP NOW
-              </button>
-            </div>
-            <div>
-              <img
-                src="assets/img/slide1.png"
-                alt="image fond site"
-                class="image-fond"
-              />
-            </div>
-          </div>
-          <!-- <a href="#" class="prev"><img src="assets/img/left.png" class="fleche-gauche" alt=""></a>
-        <a href="#" class="next"><img src="assets/img/right.png" alt="" class="fleche-droite"></a> -->
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <section>
-        <div class="footer">
-          <div class="text1-footer">
-            <p>TROUVER NOTRE MAGASIN</p>
-            <p>DEVENIR MEMBRE DU CLUB</p>
-            <p>CODE PROMO</p>
-          </div>
-
-          <div class="text2-footer">
-            <p class="text2-footer-1">OBTENIR DE L'AIDE</p>
-            <p>Suivi de commande</p>
-            <p>information de livraison</p>
-            <p>Suivi de retour</p>
-            <p>Information Mode de paiement</p>
-            <p>Contactez nous</p>
-          </div>
-
-          <div class="text2-footer">
-            <p class="text2-footer-2">
-              A PROPOS DE DANDY'S NATION SNEAKERS & JEANS
-            </p>
-            <p>Nouveauté</p>
-            <p>On recrute</p>
-            <p>Suivi de retour</p>
-            <p>Information Mode de paiement</p>
-            <p>Contactez nous</p>
-          </div>
-
-          <div class="text2-footer">
-            <p class="text2-footer-3">NOS RESEAUX SOCIAUX</p>
-            <img src="assets/img/Group 52.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="bas-page">
-          <img src="assets/img/logo-carte.png" alt="" />
-          <p>France</p>
-          <p>Guide</p>
-          <p>Conditions d'utilisation</p>
-          <p>Conditions de vente</p>
-          <p>Mention légale</p>
-          <p>Politique de confidentialité</p>
-          <p>Conditions des cookies</p>
-          <p>Paramètre de cookies</p>
-          <p class="Copyright">
-            Copyright © 2021 Dandy's Nation. Tous droits réservés.
-          </p>
-        </div>
-      </section>
-    </footer>
-
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <form>
-          <label for="email">Adresse e-mail:</label>
-          <input type="email" id="email" name="email" required>
-    
-          <label for="password">Mot de passe:</label>
-          <input type="password" id="password" name="password" required>
-          <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">Afficher/Cacher</button>
-    
-          <button type="submit">Se connecter</button>
-        </form>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="assets/img/logo.jpg" alt="logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="shop.html">Produits</a></li>
+        <li><a href="perso.html">Produits personnalisé</a></li>
+        <li><a href="formulaire.html">Contact</a></li>
+      </ul>
+      <div class="icon">
+        <span><img src="assets/img/search.png" alt="search" /></span>
+        <span id="loginIcon" onclick="openPopup();">
+          <img src="assets/img/login.png" alt="user" />
+        </span>
+        <span><img src="assets/img/coeur.png" alt="coeur" /></span>
+        <span><img src="assets/img/bag.png" alt="cart" /></span>
       </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="carousel">
+          <div class="text-wrapper">
+            <p class="text1">Sneaker Collection</p>
+            <p class="text2">
+              GOOD PLACE
+              <br />
+              TO BUY
+              <br />
+              YOUR SNEAKERS
+            </p>
+            <button class="text3" onclick="window.location.href='shop.html';">
+              SHOP NOW
+            </button>
+          </div>
+          <div>
+            <img src="assets/img/slide1.png" alt="image fond site" class="image-fond" />
+          </div>
+        </div>
+        <!-- <a href="#" class="prev"><img src="assets/img/left.png" class="fleche-gauche" alt=""></a>
+        <a href="#" class="next"><img src="assets/img/right.png" alt="" class="fleche-droite"></a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <div class="footer">
+        <div class="text1-footer">
+          <p>TROUVER NOTRE MAGASIN</p>
+          <p>DEVENIR MEMBRE DU CLUB</p>
+          <p>CODE PROMO</p>
+        </div>
+
+        <div class="text2-footer">
+          <p class="text2-footer-1">OBTENIR DE L'AIDE</p>
+          <p>Suivi de commande</p>
+          <p>information de livraison</p>
+          <p>Suivi de retour</p>
+          <p>Information Mode de paiement</p>
+          <p>Contactez nous</p>
+        </div>
+
+        <div class="text2-footer">
+          <p class="text2-footer-2">
+            A PROPOS DE DANDY'S NATION SNEAKERS & JEANS
+          </p>
+          <p>Nouveauté</p>
+          <p>On recrute</p>
+          <p>Suivi de retour</p>
+          <p>Information Mode de paiement</p>
+          <p>Contactez nous</p>
+        </div>
+
+        <div class="text2-footer">
+          <p class="text2-footer-3">NOS RESEAUX SOCIAUX</p>
+          <img src="assets/img/Group 52.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bas-page">
+        <img src="assets/img/logo-carte.png" alt="" />
+        <p>France</p>
+        <p>Guide</p>
+        <p>Conditions d'utilisation</p>
+        <p>Conditions de vente</p>
+        <p>Mention légale</p>
+        <p>Politique de confidentialité</p>
+        <p>Conditions des cookies</p>
+        <p>Paramètre de cookies</p>
+        <p class="Copyright">
+          Copyright © 2021 Dandy's Nation. Tous droits réservés.
+        </p>
+      </div>
+    </section>
+  </footer>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <form>
+        <label for="email">Adresse e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">Afficher/Cacher</button>
+
+        <button type="submit">Se connecter</button>
+      </form>
     </div>
-  </body>
-  <script src="assets/index.js"></script>
+  </div>
+</body>
+<script src="assets/index.js"></script>
+
 </html>
