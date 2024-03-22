@@ -5,6 +5,7 @@
 @import "shop.css";
 @import "perso.css";
 
+
 body {
   background-color: rgb(253, 253, 253);
   line-height: 1.6;
@@ -57,6 +58,81 @@ html {
   color: white !important;
 }
 
+/* pop up */
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+.toggle-password {
+  position: relative;
+  margin-bottom: 50px; /* Ajustez cette valeur selon votre besoin */
+  padding: 5px 10px; /* Ajustez la taille du bouton */
+  font-size: 12px; /* Ajustez la taille de la police */
+  border: none;
+  background-color: black; /* Couleur de fond du bouton */
+  cursor: pointer;
+  width: 100px;
+}
+
+.toggle-password:hover {
+  background-color: #ddd; /* Couleur de fond au survol */
+}
+
+#password {
+  padding-right: 40px; /* Réservez de l'espace à droite pour le bouton */
+}
+.form-container {
+  font-family: Baskerville, sans-serif; /* Remplacez "Votre Police" par le nom de la police souhaitée */
+}
 @media (max-width: 835px) {
   .image-fond {
     width: 100vw;
