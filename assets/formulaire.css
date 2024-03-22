@@ -76,8 +76,8 @@ form .input-box span.details{
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
-  background-color: black; /* Définition de la couleur de fond en noir */
-  color: white; /* Définition de la couleur du texte en blanc */
+  background-color: rgb(156, 156, 156); /* Définition de la couleur de fond en noir */
+  color: black; /* Définition de la couleur du texte en blanc */
 }
 
 .user-details .input-box:first-child {
@@ -120,7 +120,7 @@ form .input-box span.details{
    width: 100%;
    border-radius: 5px;
    border: none;
-   color: #fff;
+   color: black;
    font-size: 18px;
    font-weight: 500;
    letter-spacing: 1px;
@@ -150,7 +150,7 @@ form .input-box span.details{
   height: 50px; /* Définir une hauteur fixe pour les boutons */
   border: none; /* Supprimer la bordure par défaut */
   border-radius: 0; /* Supprimer les coins arrondis */
-  background-color: black; /* Couleur de fond grise pour les boutons */
+  background-color: 156, 156, 156; /* Couleur de fond grise pour les boutons */
   margin-bottom: 200px;
   font-family: Anton, sans-serif;
   font-size: 1.5rem;
@@ -160,7 +160,7 @@ form .input-box span.details{
   height: 50px; /* Définir une hauteur fixe pour les boutons */
   border: none; /* Supprimer la bordure par défaut */
   border-radius: 0; /* Supprimer les coins arrondis */
-  background-color: black; /* Couleur de fond grise pour les boutons */
+  background-color: 156, 156, 156; /* Couleur de fond grise pour les boutons */
   margin-bottom: 200px;
   font-family: Anton, sans-serif;
   font-size: 1.5rem;
@@ -218,7 +218,7 @@ form .input-box span.details{
   
   .button-container .reset:hover,
   .button-container .submit:hover {
-      background-color: white; /* Couleur de fond au survol */
+      background-color: black; /* Couleur de fond au survol */
       color: black;
     }
 

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page produits">
-    <title>Nos différents Produits</title>
-    <link rel="stylesheet" href="assets/shop.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page produits">
+  <title>Nos différents Produits</title>
+  <link rel="stylesheet" href="assets/shop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   <header>
     <nav>
@@ -30,129 +33,138 @@
       </div>
     </nav>
   </header>
-    
+
+  <main>
     <section>
-        <div class="code-promo">
-            <h1>Livraison Gratuite à partir de 50€ d'achat</h1>
-        </div>
+      <div class="code-promo">
+        <h1>Livraison Gratuite à partir de 50€ d'achat</h1>
+      </div>
     </section>
 
     <section>
-    <div class="produits-une">
+      <div class="produits-une">
         <p>Accueil > Produits à la une</p>
 
         <h1>PRODUITS A LA UNE <sup>(12)</sup></h1>
-    </div>
+      </div>
     </section>
 
 
     <section>
-        <div class="filtres">
-          <label for="genre">Genre:</label>
-            <select name="genre">
-                <option value="">Genre</option>
-                <option value="homme">Homme</option>
-                <option value="femme">Femme</option>
-            </select>
+      <div class="filtres">
+        <label>Genre:</label>
+        <select name="genre">
+          <option value="">Genre</option>
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+        </select>
 
-            <label for="categories">Catégories:</label>
-            <select name="categories" id="categories">
-                <option value="">Catégories</option>
-                <option value="chaussure">Chaussure</option>
-                <option value="pulls">Pulls</option>
-                <option value="maillots">Maillots</option>
-            </select>
+        <label>Catégories:</label>
+        <select name="categories" id="categories">
+          <option value="">Catégories</option>
+          <option value="chaussure">Chaussure</option>
+          <option value="pulls">Pulls</option>
+          <option value="maillots">Maillots</option>
+        </select>
 
-            <label for="marque">Marque:</label>
-            <select name="marque">
-                <option value="">Marque</option>
-                <option value="nike">Nike</option>
-                <option value="adidas">Adidas</option>
-                <option value="levis">Levis</option>
-                <option value="montlimar">Montlimar</option>
-                <option value="lacoste">Lacoste</option>
-                <option value="devred">Devred</option>
-                <option value="stoffa">Stoffa</option>
-                <option value="puma">puma</option>
-            </select>
+        <label>Marque:</label>
+        <select name="marque">
+          <option value="">Marque</option>
+          <option value="nike">Nike</option>
+          <option value="adidas">Adidas</option>
+          <option value="levis">Levis</option>
+          <option value="montlimar">Montlimar</option>
+          <option value="lacoste">Lacoste</option>
+          <option value="devred">Devred</option>
+          <option value="stoffa">Stoffa</option>
+          <option value="puma">puma</option>
+        </select>
 
-            <label for="taille">Taille:</label>
-            <select id="taille" name="taille">
-              <option value="">Taille</option>
-            </select>
+        <label></label>
+        <select id="taille" name="taille">
+          <option value="">Taille</option>
+        </select>
 
-              <label for="prix">Prix:</label>
-              <select name="prix">
-                <option value="">Prix</option>
-                <option value="moins50">Moins de 50€</option>
-                <option value="50a100">50€ - 100€</option>
-                <option value="plus100">Plus de 100€</option>
-              </select>
+        <label></label>
+        <select name="prix">
+          <option value="">Prix</option>
+          <option value="moins50">Moins de 50€</option>
+          <option value="50a100">50€ - 100€</option>
+          <option value="plus100">Plus de 100€</option>
+        </select>
 
-              <select name="couleur">
-                <option value="">Couleur</option>
-                <option value="rouge">Rouge</option>
-                <option value="bleu">Bleu</option>
-                <option value="vert">Vert</option>
-                <option value="gris">Gris</option>
-                <option value="orange">Orange</option>
-                <option value="rose">Rose</option>
-                <option value="marron">Marron</option>
-                <option value="noir">Noir</option>
-              </select>
+        <label>Couleurs:</label>
+        <select name="couleur">
+          <option value="">Couleur</option>
+          <option value="rouge">Rouge</option>
+          <option value="bleu">Bleu</option>
+          <option value="vert">Vert</option>
+          <option value="gris">Gris</option>
+          <option value="orange">Orange</option>
+          <option value="rose">Rose</option>
+          <option value="marron">Marron</option>
+          <option value="noir">Noir</option>
+        </select>
 
-              <select name="plus_filtres">
-                <option value="">Plus de filtres</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-              </select>
+        <label>plus de filtre</label>
+        <select name="plus_filtres">
+          <option value="">Plus de filtres</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+        </select>
 
-              <select name="trier_par">
-                <option value="">Trier par</option>
-                <option value="prix_asc">Prix croissant</option>
-                <option value="prix_desc">Prix décroissant</option>
-                <option value="date">Date</option>
-              </select>
-            </div>
+        <select name="trier_par" id="trierPar">
+          <option value="">Trier par</option>
+          <option value="prix_asc">Prix croissant</option>
+          <option value="prix_desc">Prix décroissant</option>
+          <option value="nom_asc">Nom Ascendant</option>
+          <option value="nom_desc">Nom Descendant</option>
+        </select>
+      </div>
 
     </section>
 
 
     <section>
-        <div class="produits">
-            <p>12 Produits</p>
-        </div>
-        
-        <div class="clear-filters">
-            <button id="clearFilters">Effacer les filtres</button>
-        </div>
+      <div class="produits">
+        <p>12 Produits</p>
+      </div>
+
+      <div class="clear-filters">
+        <button id="clearFilters">Effacer les filtres</button>
+      </div>
     </section>
 
 
     <section>
-        <div class="produit-galerie-container">
-          <div class="produit1" data-genre="homme" data-categorie="chaussure" data-marque="Nike" data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="plus100" data-couleur="bleu">
-          <img src="assets/img/jordan 1-perso/face-inverser.png" alt="Image chaussure Jordan 1 Hi FlyEase" class="taille-image">
+      <div class="produit-galerie-container">
+        <div class="produit1" data-genre="homme" data-categorie="chaussure" data-marque="Nike"
+          data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="plus100" data-couleur="bleu">
+          <img src="assets/img/jordan 1-perso/face-inverser.png" alt="Image chaussure Jordan 1 Hi FlyEase"
+            class="taille-image">
           <p>Air Jordan 1 Hi FlyEase</p>
           <p>Chaussure pour hommes</p>
           <p>115€</p>
         </div>
 
-        <div class="produit2" data-genre="homme" data-categorie="pulls" data-marque="montlimar" data-taille="S, M, L, XL, XXL" data-prix="plus100" data-couleur="bleu">
+        <div class="produit2" data-genre="homme" data-categorie="pulls" data-marque="montlimar"
+          data-taille="S, M, L, XL, XXL" data-prix="plus100" data-couleur="bleu">
           <img src="assets/img/pull-montlimart.jpeg" alt="Pull Montlimart" class="taille-image">
           <p>Pulls Montlimart</p>
           <p>Pulls</p>
           <p>149€</p>
         </div>
 
-        <div class="produit3" data-genre="homme" data-categorie="pulls" data-marque="nike" data-taille="S, M, L, XL, XXL" data-prix="plus100" data-couleur="noir">
+        <div class="produit3" data-genre="homme" data-categorie="pulls" data-marque="nike"
+          data-taille="S, M, L, XL, XXL" data-prix="plus100" data-couleur="noir">
           <img src="assets/img/pull-nike.webp" alt="Pull nike noir" class="taille-image">
           <p>Pull nike noir</p>
           <p>Pulls pour hommes</p>
           <p>65€</p>
         </div>
 
-        <div class="produit4" data-genre="homme" data-categorie="maillots" data-marque="puma" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="bleu">
+        <div class="produit4" data-genre="homme" data-categorie="maillots" data-marque="puma"
+          data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="bleu">
           <img src="assets/img/puma.avif" alt="T-Shirt Puma Bleu" class="taille-image">
           <p>T-Shirt Puma Bleu</p>
           <p>T-Shirts pour hommes</p>
@@ -160,110 +172,123 @@
         </div>
       </div>
 
-    <div class="produits-ligne2">
-      <div class="produit-galerie-container">
-        <div class="produit1" data-genre="homme" data-categorie="maillots" data-marque="levis" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="blanc">
-          <img src="assets/img/levis.webp" alt="Image Levis Blanc" class="taille-image">
-          <p>T-Shirt Levis Blanc</p>
-          <p>Maillot pour hommes</p>
-          <p>35€</p>
-        </div>
+      <div class="produits-ligne2">
+        <div class="produit-galerie-container">
+          <div class="produit1" data-genre="homme" data-categorie="maillots" data-marque="levis"
+            data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="blanc">
+            <img src="assets/img/levis.webp" alt="Image Levis Blanc" class="taille-image">
+            <p>T-Shirt Levis Blanc</p>
+            <p>Maillot pour hommes</p>
+            <p>35€</p>
+          </div>
 
-        <div class="produit2" data-genre="homme" data-categorie="pulls" data-marque="nike" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="gris">
-          <img src="assets/img/pull-nike-gris.webp" alt="Image pull gris nike" class="montlimart">
-          <p>Pull Nike gris</p>
-          <p>Pull pour homme</p>
-          <p>35,99€</p>
-        </div>
+          <div class="produit2" data-genre="homme" data-categorie="pulls" data-marque="nike"
+            data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="gris">
+            <img src="assets/img/pull-nike-gris.webp" alt="Image pull gris nike" class="montlimart">
+            <p>Pull Nike gris</p>
+            <p>Pull pour homme</p>
+            <p>35,99€</p>
+          </div>
 
-        <div class="produit3" data-genre="homme" data-categorie="chaussure" data-marque="nike" data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="orange">
-          <img src="assets/img/jordan-air-1-mid-.png" alt="Image chaussure Jordan air 1 mid Orange" class="jordan">
-          <p>Jordan air 1 mid Orange</p>
-          <p>Chaussure pour hommes</p>
-          <p>90€</p>
-        </div>
+          <div class="produit3" data-genre="homme" data-categorie="chaussure" data-marque="nike"
+            data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="orange">
+            <img src="assets/img/jordan-air-1-mid-.png" alt="Image chaussure Jordan air 1 mid Orange" class="jordan">
+            <p>Jordan air 1 mid Orange</p>
+            <p>Chaussure pour hommes</p>
+            <p>90€</p>
+          </div>
 
-        <div class="produit4" data-genre="homme" data-categorie="maillots" data-marque="nike" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="orange">
-          <img src="assets/img/maillot-nike-fitness.jpg" alt="Maillot nike fitness orange" class="jordan">
-          <p>JMaillot nike fitness</p>
-          <p>Maillot pour homme</p>
-          <p>19,99€</p>
+          <div class="produit4" data-genre="homme" data-categorie="maillots" data-marque="nike"
+            data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="orange">
+            <img src="assets/img/maillot-nike-fitness.jpg" alt="Maillot nike fitness orange" class="jordan">
+            <p>JMaillot nike fitness</p>
+            <p>Maillot pour homme</p>
+            <p>19,99€</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="produits-ligne3">
-      <div class="produit-galerie-container">
-        <div class="produit1" data-genre="femme" data-categorie="pulls" data-marque="nike" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="noir">
-          <img src="assets/img/sweat-nike-femme.jpg" alt="Image sweat nike femme noir" class="jordan">
-          <p>Sweat nike femme noir</p>
-          <p>Pull pour femmes</p>
-          <p>65€</p>
-        </div>
+      <div class="produits-ligne3">
+        <div class="produit-galerie-container">
+          <div class="produit1" data-genre="femme" data-categorie="pulls" data-marque="nike"
+            data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="noir">
+            <img src="assets/img/sweat-nike-femme.jpg" alt="Image sweat nike femme noir" class="jordan">
+            <p>Sweat nike femme noir</p>
+            <p>Pull pour femmes</p>
+            <p>65€</p>
+          </div>
 
-        <div class="produit2" data-genre="femme" data-categorie="maillots" data-marque="nike" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="bleu">
-          <img src="assets/img/adidas-maillot.jpeg" alt="Image adidas maillot bleu" class="montlimart">
-          <p>adidas maillot bleu</p>
-          <p>Chaussure pour femme</p>
-          <p>73€</p>
-        </div>
+          <div class="produit2" data-genre="femme" data-categorie="maillots" data-marque="nike"
+            data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="bleu">
+            <img src="assets/img/adidas-maillot.jpeg" alt="Image adidas maillot bleu" class="montlimart">
+            <p>adidas maillot bleu</p>
+            <p>Chaussure pour femme</p>
+            <p>73€</p>
+          </div>
 
-        <div class="produit3" data-genre="homme" data-categorie="chaussure" data-marque="nike" data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="marron">
-          <img src="assets/img/chaussure-levis.jpg" alt="Image chaussure levis" class="jordan">
-          <p>Chaussure Levis</p>
-          <p>Chaussure pour hommes</p>
-          <p>59,99€</p>
-        </div>
+          <div class="produit3" data-genre="homme" data-categorie="chaussure" data-marque="nike"
+            data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="marron">
+            <img src="assets/img/chaussure-levis.jpg" alt="Image chaussure levis" class="jordan">
+            <p>Chaussure Levis</p>
+            <p>Chaussure pour hommes</p>
+            <p>59,99€</p>
+          </div>
 
-        <div class="produit4" data-genre="homme" data-categorie="chaussure" data-marque="nike" data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="noir">
-          <img src="assets/img/chaussure-adidas.jpg" alt="Image chaussure Adidas noir" class="jordan">
-          <p>Chaussure Adidas</p>
-          <p>Chaussure pour hommes</p>
-          <p>74,99€</p>
+          <div class="produit4" data-genre="homme" data-categorie="chaussure" data-marque="nike"
+            data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="noir">
+            <img src="assets/img/chaussure-adidas.jpg" alt="Image chaussure Adidas noir" class="jordan">
+            <p>Chaussure Adidas</p>
+            <p>Chaussure pour hommes</p>
+            <p>74,99€</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="produits-ligne1">
-      <div class="produit-galerie-container">
-        <div class="produit1" data-genre="femme" data-categorie="chaussure" data-marque="adidas" data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="rose">
-          <img src="assets/img/chaussure-femme-adidas.jpg" alt="Image chaussure femme adidas" class="jordan">
-          <p>Chaussure adidas rose</p>
-          <p>Chaussure pour hommes</p>
-          <p>90€</p>
-        </div>
+      <div class="produits-ligne1">
+        <div class="produit-galerie-container">
+          <div class="produit1" data-genre="femme" data-categorie="chaussure" data-marque="adidas"
+            data-taille="36,37,38,39,40,41,42,43,44,45,46,47,48" data-prix="50a100" data-couleur="rose">
+            <img src="assets/img/chaussure-femme-adidas.jpg" alt="Image chaussure femme adidas" class="jordan">
+            <p>Chaussure adidas rose</p>
+            <p>Chaussure pour hommes</p>
+            <p>90€</p>
+          </div>
 
-        <div class="produit2" data-genre="femme" data-categorie="maillots" data-marque="levis" data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="rose">
-          <img src="assets/img/maillot-levis-femme.jpg" alt="Maillot levis femme rose" class="montlimart">
-          <p>Maillot Levis femme</p>
-          <p>Maillot pour femme</p>
-          <p>19,95€</p>
-        </div>
+          <div class="produit2" data-genre="femme" data-categorie="maillots" data-marque="levis"
+            data-taille="S, M, L, XL, XXL" data-prix="moins50" data-couleur="rose">
+            <img src="assets/img/maillot-levis-femme.jpg" alt="Maillot levis femme rose" class="montlimart">
+            <p>Maillot Levis femme</p>
+            <p>Maillot pour femme</p>
+            <p>19,95€</p>
+          </div>
 
-        <div class="produit3" data-genre="homme" data-categorie="pulls" data-marque="nike" data-taille="S, M, L, XL, XXL" data-prix="50a100" data-couleur="gris">
-          <img src="assets/img/pull-nike-homme.jpg" alt="Pull nike homme gris" class="jordan">
-          <p>Pull nike gris homme</p>
-          <p>pulls</p>
-          <p>59,99€</p>
-        </div>
+          <div class="produit3" data-genre="homme" data-categorie="pulls" data-marque="nike"
+            data-taille="S, M, L, XL, XXL" data-prix="50a100" data-couleur="gris">
+            <img src="assets/img/pull-nike-homme.jpg" alt="Pull nike homme gris" class="jordan">
+            <p>Pull nike gris homme</p>
+            <p>pulls</p>
+            <p>59,99€</p>
+          </div>
 
-        <div class="produit4" data-genre="femme" data-categorie="chaussure" data-marque="levis" data-taille="S, M, L, XL, XXL" data-prix="50a100" data-couleur="gris">
-          <img src="assets/img/chaussure-levis-femme.jpg" alt="Image chaussure levis" class="jordan">
-          <p>Chaussure levis femme</p>
-          <p>Chaussure pour femme</p>
-          <p>35€</p>
+          <div class="produit4" data-genre="femme" data-categorie="chaussure" data-marque="levis"
+            data-taille="S, M, L, XL, XXL" data-prix="50a100" data-couleur="gris">
+            <img src="assets/img/chaussure-levis-femme.jpg" alt="Image chaussure levis" class="jordan">
+            <p>Chaussure levis femme</p>
+            <p>Chaussure pour femme</p>
+            <p>35€</p>
+          </div>
         </div>
       </div>
-    </div>
     </section>
+  </main>
 
-    <footer>
-      <section>
-        <div class="footer">
-          <div class="text1-footer">
+  <footer>
+    <section>
+      <div class="footer">
+        <div class="text1-footer">
           <p>TROUVER NOTRE MAGASIN</p>
           <p>DEVENIR MEMBRE DU CLUB</p>
           <p>CODE PROMO</p>
         </div>
-    
+
         <div class="text2-footer">
           <p class="text2-footer-1">OBTENIR DE L'AIDE</p>
           <p>Suivi de commande</p>
@@ -272,7 +297,7 @@
           <p>Information Mode de paiement</p>
           <p>Contactez nous</p>
         </div>
-    
+
         <div class="text2-footer">
           <p class="text2-footer-2">A PROPOS DE DANDY'S NATION SNEAKERS & JEANS</p>
           <p>Nouveauté</p>
@@ -281,31 +306,32 @@
           <p>Information Mode de paiement</p>
           <p>Contactez nous</p>
         </div>
-    
+
         <div class="text2-footer">
           <p class="text2-footer-3">NOS RESEAUX SOCIAUX</p>
-          <img src="assets/img/Group 52.png" alt="">
+          <img src="assets/img/Group 52.png" alt="image reseaux sociaux">
         </div>
       </div>
     </section>
-    
-        <section>
-          <div class="bas-page">
-            <img src="assets/img/logo-carte.png" alt="">
-            <p>France</p>
-            <p>Guide</p>
-            <p>Conditions d'utilisation</p>
-            <p>Conditions de vente</p>
-            <p>Mention légale</p>
-            <p>Politique de confidentialité</p>
-            <p>Conditions des cookies</p>
-            <p>Paramètre de cookies</p>
-            <p class="Copyright">Copyright © 2021 Dandy's Nation. Tous droits réservés.</p>
-          </div>
-        </section>
-      </footer>
-    
 
-    <script src="assets/shop.js"></script>
+    <section>
+      <div class="bas-page">
+        <img src="assets/img/logo-carte.png" alt="image carte">
+        <p>France</p>
+        <p>Guide</p>
+        <p>Conditions d'utilisation</p>
+        <p>Conditions de vente</p>
+        <p>Mention légale</p>
+        <p>Politique de confidentialité</p>
+        <p>Conditions des cookies</p>
+        <p>Paramètre de cookies</p>
+        <p class="Copyright">Copyright © 2021 Dandy's Nation. Tous droits réservés.</p>
+      </div>
+    </section>
+  </footer>
+
+
+  <script src="assets/shop.js"></script>
 </body>
+
 </html>

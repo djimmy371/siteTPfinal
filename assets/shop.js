@@ -101,3 +101,57 @@ document.addEventListener("DOMContentLoaded", function() {
         select.addEventListener('change', filtrerProduits);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const trierParSelect = document.getElementById("trierPar");
+    const produitsContainer = document.querySelector(".produit-galerie-container");
+  
+    if (trierParSelect && produitsContainer) { // Vérifie si les éléments existent
+      trierParSelect.addEventListener("change", function () {
+        const tri = trierParSelect.value;
+        const produits = Array.from(produitsContainer.children);
+  
+        // Trie les produits en fonction de l'option sélectionnée
+        switch (tri) {
+          case "nom_asc":
+            produits.sort((a, b) => {
+              const nomA = a.querySelector("p:nth-child(1)");
+              const nomB = b.querySelector("p:nth-child(1)");
+              return nomA && nomB ? nomA.textContent.toLowerCase().localeCompare(nomB.textContent.toLowerCase()) : 0;
+            });
+            break;
+          case "nom_desc":
+            produits.sort((a, b) => {
+              const nomA = a.querySelector("p:nth-child(1)");
+              const nomB = b.querySelector("p:nth-child(1)");
+              return nomA && nomB ? nomB.textContent.toLowerCase().localeCompare(nomA.textContent.toLowerCase()) : 0;
+            });
+            break;
+          case "prix_asc":
+            produits.sort((a, b) => {
+              const prixA = parseFloat(a.querySelector("p:nth-child(3)").textContent);
+              const prixB = parseFloat(b.querySelector("p:nth-child(3)").textContent);
+              return prixA - prixB;
+            });
+            break;
+          case "prix_desc":
+            produits.sort((a, b) => {
+              const prixA = parseFloat(a.querySelector("p:nth-child(3)").textContent);
+              const prixB = parseFloat(b.querySelector("p:nth-child(3)").textContent);
+              return prixB - prixA;
+            });
+            break;
+          default:
+            return;
+        }
+  
+        // Vide le conteneur des produits
+        produitsContainer.innerHTML = "";
+  
+        // Ajoute les produits triés dans le conteneur
+        produits.forEach((produit) => {
+          produitsContainer.appendChild(produit);
+        });
+      });
+    }
+});

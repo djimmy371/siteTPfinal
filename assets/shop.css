@@ -51,6 +51,12 @@
 .filtres select[name="genre"] {
   width: 100px; /* Largeur personnalisée */
 }
+.filtres select[name="plus_filtres"] {
+  width: 125px; /* Largeur personnalisée */
+}
+.filtres label {
+  display: none;
+}
 .produits p {
   font-family: Jost, sans-serif;
   font-size: 1.5rem;
@@ -79,6 +85,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 
 .taille-image {
   width: 200px;
